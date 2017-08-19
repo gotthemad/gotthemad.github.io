@@ -9,18 +9,39 @@
 <body>
     <form action="https://formspree.io/gotthemad@gmail.com" method="POST">
         <label for="imie">Imię:</label><br />
-        <input type="text" name="imie" /><br />
+        <input type="text" name="imie" id="imie" /><br />
+
         <label for="nazwisko">Nazwisko:</label><br />
-        <input type="text" name="nazwisko" /><br />
+        <input type="text" name="nazwisko" id="nazwisko" /><br />
+
         <label for="email">Email:</label><br />
-        <input type="email" name="email" /><br />
+        <input type="email" name="email" id="email" /><br />
+
         <label for="telefon">Numer telefonu</label><br />
-        <input type="tel" name="telefon" /><br />
+        <input type="tel" name="telefon" id="telefon" /><br />
+
+        <label for="miasto">Wybierz miasto:</label><br />
+        <select name="miasto" id="miasto">
+            <option value="warszawa">Warszawa</option>
+            <option value="krakow">Kraków</option>
+            <option value="gdansk">Gdańsk</option>
+        </select><br />
+        
+        <label for="kobieta">Kobieta</label><br />
+        <input type="radio" name="plec" id="kobieta" value="kobieta"><br>
+        
+        <label for="mezczyzna">Mężczyzna</label><br />
+        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna"><br>
+        
         <label for="wiadomosc">Wiadomość</label><br />
-        <input type="text" name="wiadomosc" /><br />
+        <textarea rows="4" cols="50" id="wiadomosc">
+Napisz wiadomość.</textarea><br />
+        
+          <input type="checkbox" name="daneosobowe" value="zgoda">Wyrażam zgodę na przetważanie danych osobowych.<br>
+
         <input type="submit" value="Wyślij" />
+
         <input type="reset">
     </form>
 </body>
-
 </html>
