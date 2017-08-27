@@ -159,23 +159,24 @@ header p {
 
 footer {
     margin: 80px 0 0 0;
-    padding: 30px 15vw 30px 15vw;
     width: 100%;
-    min-height: 200px;
-    background-color: rgb(33,59,80);
     color: white;
 }
-footer h2 {
-    font-size: 40px;
+.footek {
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
-footer address {
-    font-style: normal;
-    margin: 20px 0 20px 0;
+.ft-gora {
+    background-color: rgb(33,59,80);
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .footka {
+    width: 50%;
     display: inline-block;
-    width: 49%;
-    font-size: 16px;
+}
+.ft-dol {
+    background-color: rgb(20,38,52);
 }
 .footka a {
     text-decoration: none;
@@ -184,20 +185,26 @@ footer address {
 .footka a:hover {
     text-decoration: underline;
 }
-.footka input[type="text"], .footka input[type="email"] {
+footer h2 {
+    font-size: 40px;
+}
+footer address {
+    font-style: normal;
+    margin: 20px 0 20px 0;
+}
+
+/*FOOTER*/
+/*FORMULAGE*/
+
+.footka input[type="text"], .footka input[type="email"], .footka textarea {
     width: 100%;
-    height: 40px;
     background-color: rgb(43,74,100);
     border: none;
     padding: 10px;
     margin: 5px 0 5px 0;
 }
-.footka textarea {
-    width: 100%;
-    margin: 5px 0 5px 0;
-    background-color: rgb(43,74,100);
-    border: none;
-    padding: 10px;
+.footka input[type="text"], .footka input[type="email"] {
+    height: 40px;
 }
 .footka input[type="submit"] {
     background-color: rgb(26, 192, 86);
@@ -212,9 +219,4 @@ footer address {
 }
 .footka input[type="submit"]:hover {
     background-color: rgb(31, 239, 106);    
-}
-.footek {
-    background-color: rgb(20,38,52);
-    width: 100%;
-    height: 25px;
 }
