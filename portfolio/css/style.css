@@ -16,6 +16,7 @@ nav {
     height: 80px;
     background-color: black;
     box-shadow: 0 3px 30px black;
+    padding: 0 15vw 0 15vw;
 }
 nav ul {
     list-style: none;
@@ -35,6 +36,12 @@ nav ul a {
     color: #fff;
 }
 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+nav div {
+    float:left;
+    font-size: 66px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
@@ -64,7 +71,7 @@ header h2, article h2 {
     text-align: center;
     margin: 40px 0 40px 0;
 }
-h1 span, h2 span {
+h1 span, h2 span, nav div span {
     color: rgb(26, 192, 86);
     font-weight: 500;
 }
@@ -122,8 +129,7 @@ header p {
     width: 33.333%;
     height: 380px;
     display: inline-block;
-    background-size: cover;
-    
+    background-size: cover;    
 }
 .port>div {
     width: 100%;
