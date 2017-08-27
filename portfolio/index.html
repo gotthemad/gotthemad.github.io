@@ -1,14 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Roboto:100,500" rel="stylesheet">
 </head>
 <body>
+   
+    <nav>
+         <ul>
+            <a href=""><li>o mnie</li></a>
+            <a href=""><li>umiejętności</li></a>
+            <a href=""><li>portfolio</li></a>
+            <a href=""><li>kontakt</li></a>
+        </ul>       
+    </nav>
     
+    <header>
+        <div>
+            <h1>Jan <span>Nowak</span></h1>
+            <p>Front-end developer</p>
+        </div>
+    </header>
+
+    <article class="art about">
+        <h2>O <span>mnie</span></h2>
+           <div class="flex">
+            <div id="art-photo">
+            <img src="img/jan-nowak.jpg" alt="">
+            </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quo iure sit minus dolorum, recusandae, cumque corporis blanditiis molestias itaque deleniti accusantium, incidunt rem rerum optio perferendis laudantium explicabo voluptatum suscipit sapiente consectetur! Nisi expedita facilis voluptas, odio aperiam eligendi incidunt, quam animi blanditiis vel magni neque voluptate eum velit officiis dolores fugit voluptatum et nesciunt laudantium temporibus reiciendis quos. Rerum architecto fugit deleniti, tenetur illum perferendis aspernatur nesciunt eveniet temporibus nisi minus impedit rem accusantium repellendus facere doloribus mollitia cupiditate praesentium voluptatem, dolorum velit. Ad facilis, nulla tempora harum quasi illo. Neque, eum aliquid officia aspernatur deserunt vel odio praesentium iure incidunt blanditiis fuga facere inventore veniam est at deleniti perspiciatis, nulla iusto adipisci dignissimos ad accusantium. Laborum aliquid aspernatur ad excepturi recusandae, atque distinctio porro dolores tempore, illum neque autem unde velit aut nesciunt obcaecati sint ipsa minima quo error corrupti, explicabo. Praesentium quis nihil expedita.</p>
+        </div>
+    </article>
+        
+    <article class="art skills">
+        <h2>Moje <span>umiejętności</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusantium vitae reiciendis sit labore harum, quisquam, doloremque neque itaque blanditiis similique. Magni porro quasi quos cupiditate, molestiae incidunt, dolorem numquam odio, veniam rerum consequuntur nemo esse corporis quae quidem ducimus aperiam. Aspernatur mollitia inventore eum quas quis, vero, natus quam corporis voluptatum debitis rem quibusdam et ad. Natus accusamus molestias facere voluptates, et? Non optio sapiente delectus sed tenetur nisi quisquam neque atque corrupti. Eaque quae provident consequuntur ab odio ipsa vero dolorem, maiores tempore excepturi suscipit ea ex, asperiores veniam! Aperiam, animi fuga quaerat vero labore ipsum, blanditiis placeat.</p>
+        <div id="tech">
+            <figure>
+                <img src="img/html5.png" alt="">
+                <figcaption>HTML5</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="img/css3.png" alt="">
+                <figcaption>CSS3</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="img/js.png" alt="">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+            
+            <figure>
+                <img src="img/jquery.png" alt="">
+                <figcaption>jQuery</figcaption>
+            </figure>
+        </div>          
+                
+    </article>
     
+    <article class="art">
+        <h2>Moje <span>portfolio</span></h2>
+           <div id="portfolio">
+               
+                <div class="port folio1">
+                    <div>
+                        <div>
+                            <h3>Lorem.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, error.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="port folio2">
+                    <div>
+                        <div>
+                            <h3>Ipsum.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, error.</p>
+                        </div>
+                    </div>
+               </div>
+               
+                <div class="port folio3">
+                    <div>
+                        <div>
+                            <h3>Dolor.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, error.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </article>
+        
+    <footer>
+        <div class="footka">
+            <h2>Jan <span>Nowak</span></h2>
+            <address>ul. Mostowa 6/13<br />
+            31-061 Kraków<br />
+            tel: 6060 74 57 59</address>
+            <a href="mailto:example@example.com">example@example.com</a>
+        </div>
+        <div class="footka">
+            <input type="text" name="imieinazwisko" placeholder="Imię i Nazwisko"/>
+            <input type="email" name="email" placeholder="E-mail"/>
+            <textarea rows="4" id="wiadomosc" placeholder="Treść wiadomości"></textarea>
+            <input type="submit" value="Wyślij" />
+        </div>
+        <div id="footek">
+            <p>Copyright &copy; Jan Nowak.</p>
+        </div>
+    </footer>    
     
 </body>
 </html>
