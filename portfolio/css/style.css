@@ -34,6 +34,11 @@ nav ul li:hover {
 }
 nav ul a {
     color: #fff;
+    transition: position 0.5s;
+}
+nav ul a:hover {
+    position: relative;
+    top: -3px;
 }
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -50,6 +55,7 @@ nav div {
 
 header {
     background-image: url(../img/header-background.jpg);
+    background-attachment: fixed;
     margin: 0;
     height: 600px;
     width: 100%;
@@ -129,7 +135,7 @@ header p {
     width: 33.333%;
     height: 380px;
     display: inline-block;
-    background-size: cover;    
+    background-size: cover; 
 }
 .port>div {
     width: 100%;
