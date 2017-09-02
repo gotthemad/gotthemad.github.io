@@ -13,10 +13,10 @@ nav {
     color: #fff;
     position: fixed;
     width: 100%;
-    height: 80px;
     background-color: black;
     box-shadow: 0 3px 30px black;
-    padding: 0 15vw 0 15vw;
+    padding: 5px 15vw 5px 15vw;
+    font-size: 20px;
 }
 nav ul {
     list-style: none;
@@ -27,18 +27,14 @@ nav ul {
 nav ul li {
     display: inline-block;
     transition: background-color 0.5s;
-    padding: 30px;
+    padding: 20px;
 }
 nav ul li:hover {
     background-color: rgb(26, 192, 86);
 }
-nav ul a {
+nav ul li a {
     color: #fff;
-    transition: position 0.5s;
-}
-nav ul a:hover {
-    position: relative;
-    top: -3px;
+    text-decoration: none;
 }
 h2 {
     font-family: 'Roboto', sans-serif;
@@ -50,27 +46,34 @@ nav div {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
 }
+.toggle, #drop {
+    display: none;
+}
 /*MENU*/
 /*HEADER*/
 
 header {
     background-image: url(../img/header-background.jpg);
     background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
     margin: 0;
-    height: 600px;
+    height: 66vmin;
+    max-height: 1276px;
+    min-height: 500px;
     width: 100%;
+    color: #fff;
+    text-align: center;
     clear: both;
 }
-header {
-    margin: 0;
-    text-align: center;
-    color: #fff;
+header div {
+    height: 100%;    
 }
-header h1 {
+header div h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 150px;
+    font-size: 8vw;
     margin: 0;
-    padding: 200px 0 0 0;
+    padding: 200px 15vw 0 15vw;
     font-weight: 100;
 }
 header h2, article h2 {
@@ -82,16 +85,16 @@ h1 span, h2 span, nav div span {
     font-weight: 500;
 }
 header p {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 /*HEADER*/
 /*ARTICLE*/
 
 .about p {
-    display: inline-block;
+    display: block;
     width: 49%;
-    margin: 0;
+    margin: auto 20px;
 }
 
 .art {
@@ -105,21 +108,21 @@ header p {
 }
 #art-photo {
     width: 49%;
-    display: inline-block;
     text-align: center;
-    margin: auto;
+    margin: auto 20px;
 }
 #art-photo img {
     max-height: 300px;
 }
 #tech {
-    margin: 40px auto 0 auto;
-    width: 660px;
+    width: 90%;
+    margin: 0 auto;
 }
-#tech figure {
-    width: 80px;
+.fig-item {
     display: inline-block;
     text-align: center;
+    margin: 30px 0 30px 0;
+    width: 24%;
 }
 .flex{
     display:flex;
@@ -182,6 +185,7 @@ footer {
     background-color: rgb(33,59,80);
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
 }
 .footka {
     width: 50%;
