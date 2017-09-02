@@ -23,6 +23,11 @@ nav ul {
     float: right;
     display: block;
     margin: 0;
+    padding: 0;
+    transition: color 0.7s;
+}
+nav ul:hover {
+    color: rgb(26, 192, 86);
 }
 nav ul li {
     display: inline-block;
