@@ -1,9 +1,50 @@
-@media only screen and (min-width: 1170px) {
-    
+@media only screen and (min-width: 1171px) {
+    header {
+        background-image: url(../img/man-1.jpg);
+        background-size: cover;
+        height: 100vh;
+    }
+    #naglowek {
+        float: left;
+        margin-left: 5%;
+        position: absolute;
+        top: 50vh;
+        transform: translateY(-50%);
+    }
+    section h1, #tlo {
+        display: none;
+    }
 }
-@media only screen and (max-width: 1170px) {
+@media only screen and (min-width: 993px) and (max-width: 1170px) {
+    header {
+        background-image: url(../img/man-2.jpg);
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    #naglowek {
+        float: right;
+        margin: 10% 5% 0 0;
+        font-size: 65%;
+    }
+    section h1, #tlo {
+        display: none;
+    }
     
 }
 @media only screen and (max-width: 992px) {
-    
+    header {
+        background-image: url(../img/man-1.jpg);
+        background-size: 100%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+    header h1 {
+        display: none;
+    }
+    section h1 {
+        text-align: center;
+        width: 100%;
+    }
 }
