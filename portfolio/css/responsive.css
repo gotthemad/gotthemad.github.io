@@ -1,5 +1,4 @@
-@media all and (max-width : 1200px){}
-@media all and (max-width: 768px){
+@media all and (max-width : 1200px){
     .toggle {
         display: block;
         padding: 20px;
@@ -35,8 +34,6 @@
         padding-right: 5vw;
     }
     
-/*    ARTICLE*/
-    
     .about p {
         width: 100%;
         margin: 20px;
@@ -49,17 +46,23 @@
         flex-direction: column;
     }
     .port {
+        width: 50%;
+    }
+    .port:last-child {
         width: 100%;
     }
 }
-@media all and (max-width : 680px){
+@media all and (max-width: 768px){
+    .port {
+        width: 100%;
+    }
+
     .fig-item {
         width: 49%;
     }
+}
+@media all and (max-width : 680px){
 
 }
 @media all and (max-width : 480px){
-    .fig-item {
-        width: 100%;
-    }
 }

@@ -1,0 +1,8 @@
+body{
+    background-color: red;
+}
+#pierwszy:before {
+    content: "przed elementem";
+    display: inline;
+    color: red;
+}

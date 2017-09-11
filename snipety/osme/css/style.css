@@ -1,0 +1,25 @@
+q:lang(en) {
+    quotes: '*' '*';
+}
+q{
+    quotes: '"' '"'; 
+}
+blockquote:lang(en) {
+    display: inline;
+}
+blockquote {
+    display: inline;
+    margin: 0;
+}
+blockquote:lang(en)::before {
+    content: '*';
+}
+blockquote:lang(en)::after {
+    content: '*'
+}
+blockquote::before {
+    content: '"';
+}
+blockquote::after {
+    content: '"'
+}

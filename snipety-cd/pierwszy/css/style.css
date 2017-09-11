@@ -1,0 +1,17 @@
+.ciekawe {
+    font-size: 25px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.ciekawe i {
+    color: cadetblue;
+    animation-name: serce;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+@keyframes serce {
+    from {font-size: 50px;}
+    to {font-size: 60px;}
+}

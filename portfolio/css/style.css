@@ -143,7 +143,8 @@ header p {
     width: 33.333%;
     height: 380px;
     display: inline-block;
-    background-size: cover; 
+    background-size: cover;
+    text-align: center;
 }
 .port>div {
     width: 100%;

@@ -1,0 +1,13 @@
+.diw {
+    width: 200px;
+    height: 200px;
+    border: 5px dotted pink;
+    margin: 20px;
+    background-image: url(../img/foto.png);
+    background-position: center;
+    background-size:150%;
+    transition: background-size 0.3s;
+}
+.diw:hover {
+    background-size: 200%;
+}

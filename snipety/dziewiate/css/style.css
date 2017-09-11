@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body{
+    margin-bottom: 100px;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}

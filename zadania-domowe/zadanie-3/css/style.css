@@ -1,0 +1,119 @@
+body {
+    background-image: url(../img/trusk.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+#pierwszy:before {
+    content: "przed elementem";
+    color: red;
+}
+#drugi:after {
+    content: "za elementem";
+    color: blue;
+}
+#trzeci:first-letter {
+    color: aqua
+}
+::selection {
+    color: darkmagenta;
+    background-color: darkkhaki;
+}
+#piaty:visited {
+    color: green;
+    text-decoration: none;
+}
+#szosty:active {
+    color: darkgreen;
+}
+#siodmy {
+    text-decoration: none;
+    color: orange;
+}
+#siodmy:hover {
+    text-decoration: underline;
+}
+#div-tab div:nth-child(even) {
+    background-color: gold;
+}
+#div-tab div:nth-child(5n+4) {
+    background-color: olive;
+}
+[suma^="15"] {
+    background-color: red;
+}
+[suma$="80"] {
+    color: blue;
+}
+[suma="3000"] {
+    background-color: blue;
+}
+[suma] {
+    height: 30px;
+}
+#kwadraty div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 3px dotted red;
+    margin: 10px;
+    background-color: bisque;
+    padding: 20px;
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+    
+}
+#paraf1 {
+    display: block;
+    background-color: aqua;
+}
+#paraf2 {
+    display: inline-block;
+    background-color: yellow;
+}
+#paraf3 {
+    display: inline-block;
+    background-color: red;
+}
+#lewa img {
+    float: left;
+    margin: 10px;
+}
+#prawa img {
+    float: right;
+    margin: 10px;
+}
+#klir {
+    clear: both;
+}
+.over {
+    width: 200px;
+    height: 100px;
+    margin: 150px;
+    background-color: aqua;
+    border: 4px dashed black;
+}
+.hidden {
+    overflow: hidden;
+}
+.visible {
+    overflow: visible;
+}
+.skrol {
+    overflow: scroll;
+}
+.auto {
+    overflow: auto;
+}
+#boks-sajzing div{
+    width: 300px;
+    height: 300px;
+    border: 5px solid yellow;
+    padding: 40px;
+    margin: 40px;
+    display: inline-block;
+    background-color: aquamarine;
+}
+#boks-sajzing div:first-child {
+    box-sizing: border-box;
+}

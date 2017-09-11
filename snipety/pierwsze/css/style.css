@@ -1,0 +1,15 @@
+#jeden {
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+#drugi {
+    background-color: darkorange;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

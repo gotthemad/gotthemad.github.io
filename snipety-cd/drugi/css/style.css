@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: beige;
+}
+.kurtyna {
+    width: 100%;
+    height: 50vh;
+}
+.up {
+    background-color: azure;
+    border-bottom: 1px solid gray;
+    animation-name: anim-up;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.down {
+    background-color: aquamarine;
+    border-top: 2px dotted green;
+    animation-name: anim-down;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes anim-up {
+    from {transform: translateY(-100%)}
+    to {transform: translateY(0)}
+}
+@keyframes anim-down {
+    from {transform: translateY(100%)}
+    to {transform: translateY(0)}
+}

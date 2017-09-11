@@ -1,0 +1,40 @@
+@media all and (max-width : 1200px) {
+    .kontener {
+        width: 25%;
+        border: 5px solid red;
+    }
+    .kontener:before {
+        content: "1200px";
+        color: red;
+    }
+}
+@media all and (max-width: 768px){
+    .kontener {
+        width: 33%;
+        border: 5px solid aqua;
+    }
+    .kontener:before {
+        content: "768px";
+        color: aqua;
+    }
+}
+@media all and (max-width : 680px){
+    .kontener {
+        width: 49%;
+        border: 5px solid pink;
+    }
+    .kontener:before {
+        content: "680px";
+        color: pink;
+    }
+}
+@media all and (max-width : 480px){
+    .kontener {
+        width: 100%;
+        border: 5px solid olive;
+    }
+    .kontener:before {
+        content: "480px";
+        color: olive;
+    }
+}

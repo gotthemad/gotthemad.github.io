@@ -1,0 +1,62 @@
+
+.mini {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+    border: 5px solid black;
+}
+.mini:hover {
+    border: 5px solid gray;
+}
+.jeden {
+    background-image: url(../img/thumb1.png);
+}
+.dwa {
+    background-image: url(../img/thumb2.png);
+}
+.trzy {
+    background-image: url(../img/thumb3.png);
+}
+.cztery {
+    background-image: url(../img/thumb4.png);
+}
+.piec {
+    background-image: url(../img/thumb5.png);
+}
+.szesc {
+    background-image: url(../img/thumb6.png);
+}
+.siedem {
+    background-image: url(../img/thumb7.png);
+}
+
+.galeria {
+    width: 500px;
+    height: 350px;
+    border: 5px solid black;
+    margin: 5px;
+    position: absolute;
+}
+#one:target {
+    background-image: url(../img/slide1.png);
+    transform: rotate(45deg);
+}
+#two:target {
+    background-image: url(../img/slide2.png);
+}
+#three:target {
+    background-image: url(../img/slide3.png);
+}
+#four:target {
+    background-image: url(../img/slide4.png);
+}
+#five:target {
+    background-image: url(../img/slide5.png);
+}
+#six:target {
+    background-image: url(../img/slide6.png);
+}
+#seven:target {
+    background-image: url(../img/slide7.png);
+}
