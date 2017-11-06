@@ -18,31 +18,24 @@ nav {
     height: 100%;
     display: flex;
     background-color: rgb(0,0,0);
-    color: white;
 }
-.navPar {
-    margin: 5px;
-    font-size: 16px;
-    display: none;
-}
-.navParOver {
-    display: block;
-    transition: all 0.4s;
-}
+
 nav ul {
     list-style: none;
     margin: auto;
     padding: 0;
-    width: 100%;
 }
 nav ul li {
     margin-bottom: 18px;
     height: 100px;
     text-align: center;
-    color: rgb(100,100,100);
     font-size: 30px;
 }
-nav ul li i {
+.embeMainMenuItem {
+    text-decoration: none;
+    color: rgb(100,100,100);
+}
+.embeMainMenuItem i {
     text-align: center;
     border: 2px solid rgb(100,100,100);
     border-radius: 50% 50%;
@@ -58,6 +51,16 @@ nav ul li i:hover {
     color: rgb(255,0,76);
     border: 2px solid rgb(255,0,76);
     transform: rotate(360deg);
+}
+.embeMenuItemName {
+    display: none;
+    margin: 5px;
+    font-size: 16px;
+    color: rgb(255,255,255);
+}
+.embeItemNameOver {
+    display: block;
+    transition: all 0.4s;
 }
 
 /*NAVBAR*/

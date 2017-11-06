@@ -1,6 +1,6 @@
-var myMenu = document.getElementById('myMenu');
-var myMenuItems = document.getElementsByTagName('li');
-var myMenuItemsText = document.getElementsByClassName('navPar');
+var myMenu = document.getElementById('embeMainMenu');
+var myMenuItems = document.getElementsByClassName('embeMainMenuItem');
+var myMenuItemsText = document.getElementsByClassName('embeMenuItemName');
 var myAllContent = document.getElementsByClassName('allContent');
 
 var intViewportHeight = window.innerHeight;
@@ -12,7 +12,7 @@ function menuMouseOver() {
     if(myMenuItems){
         for (var i=0; i<myMenuItems.length; i++){
             myMenuItems[i].classList.add('menuHover');
-            myMenuItemsText[i].classList.add('navParOver');
+            myMenuItemsText[i].classList.add('embeItemNameOver');
         }
     }
 }
@@ -21,7 +21,7 @@ function menuMouseOut() {
     if(myMenuItems){
         for (var i=0; i<myMenuItems.length; i++){
             myMenuItems[i].classList.remove('menuHover');
-            myMenuItemsText[i].classList.remove('navParOver');
+            myMenuItemsText[i].classList.remove('embeItemNameOver');
         }
     }
 }
