@@ -55,8 +55,8 @@ nav ul li i {
     color: white;
 }
 nav ul li i:hover {
-    color: rgb(20, 162, 204);
-    border: 2px solid rgb(20, 162, 204);
+    color: rgb(255,0,76);
+    border: 2px solid rgb(255,0,76);
     transform: rotate(360deg);
 }
 
