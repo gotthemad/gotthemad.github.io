@@ -1,125 +1,66 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Jan Nowak - portfolio</title>
+    <title>Michael B. Frontend Developer</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300|Roboto:100,500&effect=anaglyph" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ropa+Sans" rel="stylesheet">
 </head>
 <body>
    
-    <nav>
-        <label for="drop" class="toggle">MENU</label>
-        <input type="checkbox" id="drop">
-         <ul>
-            <li><a href="">o mnie</a></li>
-            <li><a href="">umiejętności</a></li>
-            <li><a href="">portfolio</a></li>
-            <li><a href="">kontakt</a></li>
-        </ul>       
+<!--MAIN NAVIGATION-->
+   
+    <nav id="myMenu">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <p class="navPar">HOME</p>
+                </a>
+            </li>
+            
+            <li>
+                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                <p class="navPar">ABOUT</p>
+            </li>
+            
+            <li>
+                <i class="fa fa-tasks" aria-hidden="true"></i>
+                <p class="navPar">SKILLS</p>
+            </li>
+            
+            <li>
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+                <p class="navPar">PROJECTS</p>
+            </li>
+            
+            <li>
+                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                <p class="navPar">CONTACT</p>
+            </li>
+            
+        </ul>
     </nav>
     
-    <header>
-        <div>
-            <h1>Jan <span>Nowak</span></h1>
-            <p>Front-end developer</p>
-        </div>
-    </header>
+<!--MAIN NAVIGATION-->
+<!--CONTENT-->
 
-    <article class="art about">
-        <h2>O <span>mnie</span></h2>
-           <div class="flex">
-            <div id="art-photo">
-            <img src="img/jan-nowak.jpg" alt="">
-            </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quo iure sit minus dolorum, recusandae, cumque corporis blanditiis molestias itaque deleniti accusantium, incidunt rem rerum optio perferendis laudantium explicabo voluptatum suscipit sapiente consectetur! Nisi expedita facilis voluptas, odio aperiam eligendi incidunt, quam animi blanditiis vel magni neque voluptate eum velit officiis dolores fugit voluptatum et nesciunt laudantium temporibus reiciendis quos. Rerum architecto fugit deleniti, tenetur illum perferendis aspernatur nesciunt eveniet temporibus nisi minus impedit rem accusantium repellendus facere doloribus mollitia cupiditate praesentium voluptatem, dolorum velit. Ad facilis, nulla tempora harum quasi illo. Neque, eum aliquid officia aspernatur deserunt vel odio praesentium iure incidunt blanditiis fuga facere inventore veniam est at deleniti perspiciatis, nulla iusto adipisci dignissimos ad accusantium. Laborum aliquid aspernatur ad excepturi recusandae, atque distinctio porro dolores tempore, illum neque autem unde velit aut nesciunt obcaecati sint ipsa minima quo error corrupti, explicabo. Praesentium quis nihil expedita.</p>
-        </div>
-    </article>
-        
-    <article class="art skills">
-        <h2>Moje <span>umiejętności</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil accusantium vitae reiciendis sit labore harum, quisquam, doloremque neque itaque blanditiis similique. Magni porro quasi quos cupiditate, molestiae incidunt, dolorem numquam odio, veniam rerum consequuntur nemo esse corporis quae quidem ducimus aperiam. Aspernatur mollitia inventore eum quas quis, vero, natus quam corporis voluptatum debitis rem quibusdam et ad. Natus accusamus molestias facere voluptates, et? Non optio sapiente delectus sed tenetur nisi quisquam neque atque corrupti. Eaque quae provident consequuntur ab odio ipsa vero dolorem, maiores tempore excepturi suscipit ea ex, asperiores veniam! Aperiam, animi fuga quaerat vero labore ipsum, blanditiis placeat.</p>
-        <div id="tech">
-            <figure class="fig-item">
-                <img src="img/html5.png" alt="">
-                <figcaption>HTML5</figcaption>
-            </figure>
-            
-            <figure class="fig-item">
-                <img src="img/css3.png" alt="">
-                <figcaption>CSS3</figcaption>
-            </figure>
-            
-            <figure class="fig-item">
-                <img src="img/js.png" alt="">
-                <figcaption>JavaScript</figcaption>
-            </figure>
-            
-            <figure class="fig-item">
-                <img src="img/jquery.png" alt="">
-                <figcaption>jQuery</figcaption>
-            </figure>
-        </div>          
-                
-    </article>
+<div class="allContent">
+    <aside class="mbHome">
+        <h1>Michael Bro</h1>
+        <p>FRONTEND DEVELOPER</p>
+    </aside>
     
-    <article class="art">
-        <h2>Moje <span>portfolio</span></h2>
-           <div id="portfolio">
-               
-                <div class="port folio1">
-                    <div>
-                        <div>
-                            <h3>Lorem.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, error.</p>
-                            <i class="fa fa-link fa-2x" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="port folio2">
-                    <div>
-                        <div>
-                            <h3>Ipsum.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, error.</p>
-                            <i class="fa fa-link fa-2x" aria-hidden="true"></i>
-                        </div>
-                    </div>
-               </div>
-               
-                <div class="port folio3">
-                    <div>
-                        <div>
-                            <h3>Dolor.</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, error.</p>
-                            <i class="fa fa-link fa-2x" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-    </article>
-        
-    <footer>
-       <div class="footek ft-gora">
-            <div class="footka">
-                <h2>Jan <span>Nowak</span></h2>
-                <address>ul. Mostowa 6/13<br />
-                31-061 Kraków<br />
-                tel: 6060 74 57 59</address>
-                <a href="mailto:example@example.com">example@example.com</a>
-            </div>
-            <div class="footka">
-                <input type="text" name="imieinazwisko" placeholder="Imię i Nazwisko"/>
-                <input type="email" name="email" placeholder="E-mail"/>
-                <textarea rows="4" id="wiadomosc" placeholder="Treść wiadomości"></textarea>
-                <input type="submit" value="Wyślij" />
-            </div>
-        </div>
-        <div class="footek ft-dol">Copyright &copy; Jan Nowak</div>
-    </footer>    
+    <aside class="mbAbout">
+        <h1>About Michael Bro</h1>
+    </aside>
+</div>
 
+
+<!--CONTENT-->
+<!--JAVA SCRIPT    -->
+<script type="text/javascript" src="js/script.js"></script>
+    
 </body>
 </html>
