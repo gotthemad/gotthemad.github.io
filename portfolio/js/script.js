@@ -1,3 +1,19 @@
+$(document).ready(function() { 
+    smoothScroll();
+});
+
+
+//SMOOTH-SCROLL
+
+function smoothScroll(){
+    $('#main-nav a[href*="#"]:not([href="#"])').click(function(){
+        $('body').animate({
+            scrollTop: $(this.hash).offset().top - 50 },
+            500);
+        });
+}
+
+
 var myMenu = document.getElementById('embeMainMenu');
 var myMenuItems = document.getElementsByClassName('embeMainMenuItem');
 var myMenuItemsText = document.getElementsByClassName('embeMenuItemName');
