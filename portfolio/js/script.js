@@ -1,22 +1,37 @@
 $(document).ready(function() { 
-    smoothScroll();
+
+var $mainMenu = $('.embe-mainMenu'),
+    $menuItemName = $('.embe-menuItemName'),
+    $mainMenuItem = $('.embe-mainMenuItem');
+    
+    $menuItemName.hide();
+
+    $mainMenu.on('mouseenter', function(e){
+        $menuItemName.fadeIn(300);
+        $mainMenuItem.addClass('embe-mainMenuItem-mouseenter');
+    });
+    
+    $mainMenu.on('mouseleave', function(){
+        $menuItemName.fadeOut(300);
+        $mainMenuItem.removeClass('embe-mainMenuItem-mouseenter');
+    });
 });
 
 
 //SMOOTH-SCROLL
 
-function smoothScroll(){
-    $('#main-nav a[href*="#"]:not([href="#"])').click(function(){
-        $('body').animate({
-            scrollTop: $(this.hash).offset().top - 50 },
-            500);
-        });
-}
+//function smoothScroll(){
+//    $('li a[href*="#"]:not([href="#"])').click(function(){
+//        $('body').animate({
+//            scrollTop: $(this.hash).offset().top},
+//            500);
+//        });
+//}
 
 
-var myMenu = document.getElementById('embeMainMenu');
-var myMenuItems = document.getElementsByClassName('embeMainMenuItem');
-var myMenuItemsText = document.getElementsByClassName('embeMenuItemName');
+var myMenu = document.getElementById('mojeMenu');
+var myMenuItems = document.getElementsByClassName('embe-mainMenuItem');
+var myMenuItemsText = document.getElementsByClassName('embe-menuItemName');
 var myAllContent = document.getElementsByClassName('allContent');
 
 var intViewportHeight = window.innerHeight;
@@ -24,16 +39,19 @@ var intViewportHeight = window.innerHeight;
 
 //FUNKCJE MENU
 
-function menuMouseOver() {
+function menuMouseOver(e) {
+    e.stopPropagation();
     if(myMenuItems){
         for (var i=0; i<myMenuItems.length; i++){
             myMenuItems[i].classList.add('menuHover');
             myMenuItemsText[i].classList.add('embeItemNameOver');
+            console.log('działa');
         }
     }
 }
 
-function menuMouseOut() {
+function menuMouseOut(e) {
+    e.stopPropagation();
     if(myMenuItems){
         for (var i=0; i<myMenuItems.length; i++){
             myMenuItems[i].classList.remove('menuHover');
@@ -59,7 +77,7 @@ function newBackground() {
 }
 
 
-myMenu.addEventListener("mouseover", menuMouseOver, false);
-myMenu.addEventListener("mouseout", menuMouseOut, false);
-
-document.addEventListener("scroll", newBackground, false);
+//myMenu.addEventListener("mouseover", menuMouseOver, true);
+//myMenu.addEventListener("mouseout", menuMouseOut, true);
+//
+//document.addEventListener("scroll", newBackground, false);

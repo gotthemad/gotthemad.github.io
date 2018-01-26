@@ -3,130 +3,243 @@
 }
 body {
     margin: 0;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 200;
     background-image: url(../img/nasa-background-mono.png);
     background-attachment: fixed;
     background-size: cover;
+    color: rgb(210,210,210);
 }
 
-/*NAVBAR*/
+/* BLACK STRIPE*/
 
-nav {
-    position: fixed;
-    width: 150px;
-    height: 100%;
+.embe-blackStripe {
     display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(0,0,0);
 }
+@media (max-width: 735px) {
+    .embe-mainMenu {
+        flex-direction: column;
+        width: 120px;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+}
+@media (min-width: 736px) and (max-width: 1085px){ 
+    .embe-blackStripe {
+        flex-direction: row;
+        height: 120px;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+@media (min-width: 1086px) {
+    .embe-blackStripe {
+        flex-direction: column;
+        width: 150px;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
 
-nav ul {
-    list-style: none;
-    margin: auto;
-    padding: 0;
+/*MAIN MENU*/
+.embe-mainMenu {
+    margin-top: 0;
+    margin-bottom: auto;
+    display: flex;
 }
-nav ul li {
-    margin-bottom: 18px;
-    height: 100px;
-    text-align: center;
-    font-size: 30px;
+.embe-mainMenu img {
+    margin-bottom: 60px;
+    margin-top: 60px;
 }
-.embeMainMenuItem {
-    text-decoration: none;
+@media (min-width: 1086px) {
+    .embe-mainMenu {
+        flex-direction: column;
+    }
+}
+@media (min-width: 736px) and (max-width: 1085px){ 
+    .embe-mainMenu {
+        flex-direction: row;
+        margin-left: auto;
+    }
+}
+/*MAIN MENU ITEM*/
+.embe-mainMenuItem {
     color: rgb(130,130,130);
+    text-decoration: none;
+    height: 120px;
+    transition: color 0.3s;
 }
-.embeMainMenuItem i {
-    text-align: center;
-    border: 2px solid rgb(130,130,130);
-    border-radius: 50% 50%;
-    padding: 20px;
-    transition: all 0.3s;
-    width: 75px;
-    height: 75px;
+@media (min-width: 736px) and (max-width: 1085px){ 
+    .embe-mainMenuItem {
+        margin-right: 20px;
+        height: 80px;
+    }
 }
-.menuHover {
+.embe-mainMenuItem-mouseenter {
     color: white;
 }
-nav ul li i:hover {
-    border: 2px solid rgb(255,0,76);
-    color: rgb(255,0,76);   
-    transform: rotate(360deg);
+.embe-mainMenuItem i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border-radius: 50% 50%;
+    border: 1px solid rgb(100,100,100);
+    transition: all 0.3s;
 }
-.embeMenuItemName {
-    display: none;
-    margin: 5px;
-    font-size: 16px;
+@media (min-width: 736px) and (max-width: 1085px){ 
+    .embe-mainMenuItem i{
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+.embe-mainMenuItem i:hover{
+    transform: rotate(360deg);
+    color: rgb(24,205,205);
+    border: 1px solid rgb(24,205,202);
+    
+}
+.embe-menuItemName {
+    text-align: center;
+    font-size: 15px;
+    margin: 3px;
     color: rgb(255,255,255);
 }
-.embeItemNameOver {
-    display: block;
-    transition: all 0.4s;
+
+/*LOGO ZONE*/
+.embe-logo {
+    font-size: 30px;
+    color: rgb(255,0,76);
+    font-family: 'Pacifico', cursive;
+    align-self: flex-start;
 }
 
-/*NAVBAR*/
-/*CONTENT*/
+.embe-logo h1 {
+    width: 150px;
+    height: 14px;
+    background-color: rgb(20,162,204);
+    margin: 0;
+    text-align: center;
+}
+@media (min-width: 736px) and (max-width: 1085px) {
+    .embe-logo h1 {
+        
+    } 
+}
 
+/*MAIN CONTENT*/
 .allContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
-    margin-left: 150px;
-    font-family: 'Ropa Sans', sans-serif;
-    transition: all 0.5s;
-}
-.newBackOnScroll {
-    background-color: rgba(0,0,0,0.5);
+    grid-template-rows: 100vh;
+    grid-gap: 30px 30px;
+    padding: 0 30px 30px 30px;
 }
 
-/*CONTENT -> SECTIONS*/
-
-.mbSections {
-    padding: 50px;
+@media (max-width: 735px) {
+    .allContent {
+        margin-right: 120px;
+    }
 }
-.mbSections h1 {
-    font-weight: 400;
-    font-size: 100px;
-    margin: 0;
-    text-align: center;
+@media (min-width: 736px) and (max-width: 1085px){ 
+    .allContent {
+        margin-top: 120px;
+    }
 }
-.mbSections h2 {
-    color: rgb(255,0,76);
-    margin: 0;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 3px;
+@media (min-width: 1086px) {
+    .allContent {
+        margin-left: 260px;
+    }
 }
-.mbSections p {
-    color: rgb(200,200,200);
+/*SECTIONS*/
+/*
+.embe-sections {
+    height: 100vh;
 }
-#mbSectionHome {
-    grid-column: 1/3;
-    grid-row: 1/2;
-    display: grid;
-}
-#mbSectionHome article {
-    grid-column: 1/3;
+*/
+#embe-sectionHome {
+    grid-column: 1/2;
     grid-row: 1/2;
     align-self: center;
-    justify-self: center;
-    color: rgb(20,162,204);
 }
 
-
-#mbSectionAbout {
-    grid-column: 1/3;
-    grid-row: 2/3
+#embe-logSec {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-image: url(../img/logo-big7.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    
 }
-#mbSectionSkills {
-    grid-column: 1/3;
+section img {
+    float: left;
+    margin: 0 30px 20px 0;
+}
+
+section h1 {
+    font-size: 75px;
+    margin: 0;
+    font-weight: 300;
+}
+h1 span {
+    color: rgb(255,83,73);
+}
+section h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 300;
+    font-size: 2em;
+    color: rgb(24,205,202);
+}
+#embe-sectionHome div {
+    padding: 13px 36px 13px 36px;
+    border: 1px solid rgb(100,100,100);
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    width: -moz-max-content;
+    color: white;
+}
+#embe-sectionHome div:hover {
+    animation-name: baton;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes baton {
+    0%   {border: 1px solid rgb(255,83,73);}
+    100%  {border: 1px solid rgb(255,255,255);}
+}
+/*
+#embe-sectionAbout {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#embe-sectionSkills {
+    grid-column: 2/3;
     grid-row: 3/4;
 }
-#mbSectionProjects {
-    grid-column: 1/3;
+#embe-sectionProjects {
+    grid-column: 1/2;
     grid-row: 4/5;
 }
-#mbSectionContact {
-    grid-column: 1/3;
+#embe-sectionContact {
+    grid-column: 2/3;
     grid-row: 5/6;
 }
+*/
 

@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url(../img/nasa-background-mono.png);
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 24px;
+}
+
+
+/*NAVBAR*/
+.embe-DisplayFlex {
+    display: flex;
+}
+.embe-DisplayNone {
+    display: none;
+}
+.embe-MenuButton {
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .embe-MenuButton {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .embe-MenuButton a {
+
+        width: 25vw;
+        height: 25vw;
+        border-radius: 50% 50%;
+        border: 3vw solid rgb(255,0,76);
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        font-size: 8vmin;
+    }
+}
+.embe-MainMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    width: 25vw;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); 
+}
+
+
+
+nav a {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+nav ul li {
+    margin-bottom: 18px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+.embeMainMenuItem {
+    text-decoration: none;
+    color: rgb(130,130,130);
+}
+.embeMainMenuItem i {
+    text-align: center;
+    border: 2px solid rgb(130,130,130);
+    border-radius: 50% 50%;
+    padding: 20px;
+    transition: all 0.3s;
+    width: 75px;
+    height: 75px;
+}
+.menuHover {
+    color: white;
+}
+nav ul li i:hover {
+    border: 2px solid rgb(255,0,76);
+    color: rgb(255,0,76);   
+    transform: rotate(360deg);
+}
+.embeMenuItemName {
+    display: none;
+    margin: 5px;
+    font-size: 16px;
+    color: rgb(255,255,255);
+}
+.embeItemNameOver {
+    display: block;
+    transition: all 0.4s;
+}
+
+/*NAVBAR*/
+/*CONTENT*/
+
+.allContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
+    margin-right: 150px;
+    font-family: 'Ropa Sans', sans-serif;
+    transition: all 0.5s;
+}
+.newBackOnScroll {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*CONTENT -> SECTIONS*/
+
+.mbSections {
+    padding: 50px;
+}
+.mbSections h1 {
+    font-weight: 400;
+    font-size: 100px;
+    margin: 0;
+    text-align: center;
+}
+.mbSections h2 {
+    color: rgb(255,0,76);
+    margin: 0;
+    font-weight: 400;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.mbSections p {
+    color: rgb(200,200,200);
+}
+#mbSectionHome {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: grid;
+}
+#mbSectionHome article {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+    color: rgb(20,162,204);
+}
+
+
+#mbSectionAbout {
+    grid-column: 1/3;
+    grid-row: 2/3
+}
+#mbSectionSkills {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+#mbSectionProjects {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+#mbSectionContact {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+nav a div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50%;
+    border: 2px solid white;
+    background-image: url(../icomoon/home.svg);
+    
+}
