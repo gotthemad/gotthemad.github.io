@@ -1,0 +1,38 @@
+#pixelLogo {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    transform: skewY(15deg);
+    width: 480px; height: 320px;
+}
+.pixelLogo-pixel:hover {
+    background-color: rgb(255,255,255);
+}
+.blue {
+    background-color: rgb(0,113,112);
+    animation-name: theColorsOne;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+.bluer {
+    background-color: rgb(27,85,103);
+    animation-name: theColorsTwo;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-out;
+}
+@keyframes theColorsOne {
+    from {background-color: rgba(27,85,103,0.5); margin: 10px;}
+    to {background-color: rgba(0,113,112,1); margin: 0px;}
+}
+@keyframes theColorsTwo {
+    from {background-color: rgba(27,85,103,1); margin: 0px;}
+    to {background-color: rgba(0,113,112,0.5); margin: 10px;}
+    
+}
+.row-1.column-1 {
+/*    background-color: pink;*/
+}
