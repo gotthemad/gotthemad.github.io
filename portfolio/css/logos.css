@@ -3,36 +3,72 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     transform: skewY(15deg);
-    width: 480px; height: 320px;
+   position:  absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   text-align: center;
+   font-size: 20px;
+   color: white;
 }
-.pixelLogo-pixel:hover {
-    background-color: rgb(255,255,255);
+.ls {
+/*    background-color: rgb(0,113,112);*/
+    animation-name: ls-anim;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-delay:0.8s;
+    background-color: rgba(0,168,167,0);
 }
-.blue {
-    background-color: rgb(0,113,112);
-    animation-name: theColorsOne;
-    animation-duration: 2s;
-    animation-direction: alternate;
+
+@keyframes ls-anim {
+    from {margin: 15px;}
+    to {margin:0; background-color: rgba(0,168,167,1);}
+}
+
+.fs {
+    animation-name: fs-anim;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+/*    animation-direction: alternate;*/
+    animation-delay:0.7s;
+    background-color: rgba(32,103,125,0);
+}
+
+@keyframes fs-anim {
+    from {margin: 15px;}
+    to {margin: 0; background-color: rgba(32,103,125,1);}
+}
+.em {
+    animation-name: em-anim;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    position: relative;
+}
+@keyframes em-anim {
+    25% {margin: 0; background-color: rgba(0,168,167,0);}
+    50% {margin: 15px; background-color: rgba(0,168,167,1);}
+    75% {margin: 0; background-color: rgba(32,103,125,1);}
+    100% {background-color: rgba(0,168,167,1);}
+}
+.be {
+    animation-name: be-anim;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
+    position: relative;
+    animation-delay:0.2s;
 }
-.bluer {
-    background-color: rgb(27,85,103);
-    animation-name: theColorsTwo;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-out;
-}
-@keyframes theColorsOne {
-    from {background-color: rgba(27,85,103,0.5); margin: 10px;}
-    to {background-color: rgba(0,113,112,1); margin: 0px;}
-}
-@keyframes theColorsTwo {
-    from {background-color: rgba(27,85,103,1); margin: 0px;}
-    to {background-color: rgba(0,113,112,0.5); margin: 10px;}
-    
-}
-.row-1.column-1 {
-/*    background-color: pink;*/
+@keyframes be-anim {
+    25% {margin: 0; background-color: rgba(32,103,125,1);}
+    50% {margin: 20px; background-color: rgba(32,103,125,1);}
+    75% {margin: 0; background-color: rgba(0,168,167,1)}
+    100% {background-color: rgba(32,103,125,1)}
 }

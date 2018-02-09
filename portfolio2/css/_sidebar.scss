@@ -1,0 +1,143 @@
+//sideBar
+.sidebar {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0 24px 0;
+    width: 10.0rem;
+    background-color: $clr-sidebar-bg;
+    
+    
+    @media (max-width: 1085px) {
+        right: 0;
+        margin: 12px;
+        align-items: flex-end;
+        padding: 0;}
+    
+    
+    @media (min-width: 1086px) {
+        left: 0;
+        height: 100%;
+        align-items: center;
+        padding: 24px 0 24px 0;
+        }
+}
+
+//sidebar logo
+.sidebar__logo {
+
+    @media (max-width: 1085px) {
+        display: none;}
+    
+    @media (min-width: 1086px) {
+        height: 100%;}   
+}
+    
+.logo__img {
+    width: 80px;
+}
+
+//sidebar burger
+.sidebar__burger {
+    
+    @media (max-width: 1085px) {
+        box-sizing: border-box;
+        height: 10.0rem;
+        width: 10.0rem;
+        padding: 20px;
+        background-color: $clr_light_blue;}
+    
+    @media (min-width: 1086px) {
+        display: none;}      
+}
+
+
+//sidebar main menu
+.sidebar__menu {
+
+    @media (max-width: 1085px) {
+        display: none;
+        }
+    
+    @media (min-width: 1086px) {
+        height: 100%;
+        display: block;
+        }
+}
+.jsSlidingName {
+    
+    @media (max-width: 1085px) {
+        
+        }
+    
+    @media (min-width: 1086px) {
+        display: none;
+        }
+    
+}
+@mixin sidebar-btn {
+    color: white;
+    text-decoration: none;
+    height: 10.0rem;
+    width: 10.0rem;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.1s;
+}
+.sidebar-btn {
+    
+    @include sidebar-btn;
+}
+.sidebar-btn--social {
+    
+    @include sidebar-btn;
+    
+    height: 5.0rem;
+    width: 5.0rem;
+}
+.sidebar-btn:hover, .sidebar-btn--social:hover {
+    color: black;
+    background-color: $clr-light-blue;
+}
+@mixin sidebar-btn__svg {
+    width: 3.0rem;
+    height: 3.0rem;
+    margin: 1.5rem auto 0 auto;
+}
+
+.sidebar-btn__svg {
+    
+   @include sidebar-btn__svg;
+    
+}
+.sidebar-btn__svg--social {
+    width: 2.0rem;
+    height: 2.0rem;
+    margin: 2.0rem auto 0 auto;
+}
+.sidebar-btn__svg path, .sidebar-btn__svg--social path {
+    fill: currentColor;
+}
+.sidebar-btn__name {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: $main-font;
+    font-size: 1.2rem;
+}
+
+//sidebar social media
+.sidebar__social-media {
+    @media (max-width: 1085px) {
+        display: none;}
+    
+    @media (min-width: 1086px) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;}
+
+}

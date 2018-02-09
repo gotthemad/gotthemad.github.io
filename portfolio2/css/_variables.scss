@@ -1,0 +1,25 @@
+//COLORS BELLOW 
+
+//First main color used in logo
+$clr-light-blue: rgb(0,168,167);
+
+//Second main color used in logo
+$clr-dark-blue: rgb(32,103,125);
+
+//Sidebar background color
+$clr-sidebar-bg: rgb(0,0,0);
+
+//Body background
+$bg-body: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)) fixed,
+    url(../img/bg_pattern.svg) fixed,
+    rgb(0, 0, 0);
+
+$clr-font-body: rgb(240,240,240);
+
+//FONTS BELLOW
+
+//Used in H1 and paragrafs
+$main-font: 'Montserrat', sans-serif;
+
+//Used in H2
+$second-font: 'Roboto', sans-serif;
