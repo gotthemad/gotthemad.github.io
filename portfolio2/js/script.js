@@ -3,7 +3,8 @@ $(document).ready(function() {
 //GLOBAL VARIABLES
 var $windowWidth = $(window).width(),
     resizeBreakpoint = 1085,
-    resizeTimer;
+    resizeTimer,
+    $menuBtnName = $('.jsSlidingName');
     
 //WHAT IF
 
@@ -21,8 +22,7 @@ if ($windowWidth >= resizeBreakpoint) {
 
 function menuOnHover(){    
 
-var $sidebarMenu = $('.jsNamesOnHover'),
-    $menuBtnName = $('.jsSlidingName');
+var $sidebarMenu = $('.jsNamesOnHover');
     
     $sidebarMenu.on('mouseenter', function(e){
         $menuBtnName.slideDown(300);
@@ -40,10 +40,11 @@ var $sidebarMenu = $('.jsNamesOnHover'),
 
             $newWidth = $(window).width();
             if ($newWidth < resizeBreakpoint) {
-                $menuBtnName.show();
                 $sidebarMenu.off();
+                $menuBtnName.show();
+                $sidebarMenu.hide();
                 burgerOnClick();
-                console.log('it works!');
+                
             }
 
         }, 250);
@@ -64,6 +65,7 @@ function burgerOnClick(){
        
         if(isClicked===false){
             $sidebarMenuShowHide.slideDown(200);
+            $menuBtnName.show(200);
             isClicked = true; 
         } else {
             $sidebarMenuShowHide.slideUp(200);
@@ -80,10 +82,11 @@ function burgerOnClick(){
 
             $newWidth = $(window).width();
             if ($newWidth > resizeBreakpoint) {
-                $sidebarMenuShowHide.show();
                 $burgerBtn.off();
+                $sidebarMenuShowHide.show();
+                $menuBtnName.hide();
                 menuOnHover();
-                console.log('it works too!!!');
+                
             }
 
         }, 250);

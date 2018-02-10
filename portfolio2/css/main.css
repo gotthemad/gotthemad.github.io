@@ -29,7 +29,6 @@ body {
   @media (max-width: 1085px) {
     .sidebar {
       right: 0;
-      margin: 12px;
       -webkit-box-align: end;
           -ms-flex-align: end;
               align-items: flex-end;
