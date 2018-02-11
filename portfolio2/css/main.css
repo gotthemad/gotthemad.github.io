@@ -93,7 +93,10 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-transition: all 0.1s;
-  transition: all 0.1s; }
+  transition: all 0.1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .sidebar-btn--social {
   color: white;
@@ -109,6 +112,9 @@ body {
           flex-direction: column;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 5.0rem;
   width: 5.0rem; }
 
@@ -119,12 +125,17 @@ body {
 .sidebar-btn__svg {
   width: 3.0rem;
   height: 3.0rem;
-  margin: 1.5rem auto 0 auto; }
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 0 0.6rem 0; }
 
 .sidebar-btn__svg--social {
-  width: 2.0rem;
-  height: 2.0rem;
-  margin: 2.0rem auto 0 auto; }
+  width: 3.0rem;
+  height: 3.0rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: 0 0 0.6rem 0;
+  margin: 0; }
 
 .sidebar-btn__svg path, .sidebar-btn__svg--social path {
   fill: currentColor; }
@@ -134,7 +145,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  margin: 0.6rem 0 0 0; }
 
 @media (max-width: 1085px) {
   .sidebar__social-media {

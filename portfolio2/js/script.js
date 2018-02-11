@@ -25,11 +25,11 @@ function menuOnHover(){
 var $sidebarMenu = $('.jsNamesOnHover');
     
     $sidebarMenu.on('mouseenter', function(e){
-        $menuBtnName.slideDown(300);
+        $menuBtnName.slideDown(200);
     });
     
     $sidebarMenu.on('mouseleave', function(e){
-        $menuBtnName.slideUp(300);
+        $menuBtnName.slideUp(200);
     });
     
     $(window).on('resize', function(e) { // INSURANCE 
@@ -100,6 +100,8 @@ function burgerOnClick(){
                 $burgerBtn.off();
                 $sidebarMenuShowHide.show();
                 $menuBtnName.hide();
+                $crossIcon.hide();
+                $burgerIcon.show();
                 menuOnHover();
                 
             }
