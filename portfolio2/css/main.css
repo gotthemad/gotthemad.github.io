@@ -58,10 +58,14 @@ body {
             box-sizing: border-box;
     height: 10.0rem;
     width: 10.0rem;
-    padding: 20px;
+    padding: 30px;
     background-color: #00a8a7; } }
 @media (min-width: 1086px) {
   .sidebar__burger {
+    display: none; } }
+
+@media (max-width: 1085px) {
+  .burger__icon--cross {
     display: none; } }
 
 @media (max-width: 1085px) {

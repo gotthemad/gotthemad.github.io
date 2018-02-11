@@ -59,20 +59,35 @@ function burgerOnClick(){
     
     var $burgerBtn = $('.jsShowHideBtn'),
     $sidebarMenuShowHide = $('.jsShowHide'),
-    isClicked = false;
-    
+    isClicked = false,
+    $burgerIcon = $('.jsBurgerIcon'),
+    $crossIcon = $('.jsCrossIcon');
+        
     $burgerBtn.on('click', function(e){
        
         if(isClicked===false){
             $sidebarMenuShowHide.slideDown(200);
             $menuBtnName.show(200);
-            isClicked = true; 
+            $burgerIcon.hide();
+            $crossIcon.fadeIn(200);
+            isClicked = true;
+            
+            $sidebarMenuShowHide.on('click', function(e){
+                $sidebarMenuShowHide.slideUp(200);
+                $crossIcon.hide();
+                $burgerIcon.fadeIn(200);
+                isClicked = false;
+            });
+            
         } else {
             $sidebarMenuShowHide.slideUp(200);
+            $crossIcon.hide();
+            $burgerIcon.fadeIn(200);
             isClicked = false;
         }
 
     });
+    
     
     $(window).on('resize', function(e) { // INSURANCE
 

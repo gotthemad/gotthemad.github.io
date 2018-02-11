@@ -46,11 +46,17 @@
         box-sizing: border-box;
         height: 10.0rem;
         width: 10.0rem;
-        padding: 20px;
+        padding: 30px;
         background-color: $clr_light_blue;}
     
     @media (min-width: 1086px) {
         display: none;}      
+}
+.burger__icon--cross {
+    
+    @media (max-width: 1085px){
+        display: none;
+    }
 }
 
 
