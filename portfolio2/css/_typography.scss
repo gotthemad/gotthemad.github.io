@@ -28,24 +28,27 @@ $clr-font-body: rgb(240,240,240);
     line-height: 4.0rem;
 }
 .t2 {
-    
     @include t2;
 }
-
 .t2--intitle {
-    
     @include t2;
-    
-    display: inherit;
+    margin: 0;
 }
-.t3 {
+@mixin t3 {
     font-family: $main-font;
     font-weight: 300;
     font-size: 6.5rem;
     color: white;
     line-height: 7.0rem;
 }
+.t3 {
+    @include t3;
+}
 .t3--intitle {
+    @include t3;
+    margin: 1.5rem 0 1.5rem 0;
+}
+.t3__michael--intitle {
     font-weight: 500;
     color: $clr-light-blue;
 }

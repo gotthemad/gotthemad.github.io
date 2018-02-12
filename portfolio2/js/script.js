@@ -115,7 +115,8 @@ function burgerOnClick(){
 };
     
 //SHOW SMALL LOGO AND CHANGE BACKGROUND ON SCROLL
-var $logoShowHide = $('.jsLogoShowHide');
+var $logoShowHide = $('.jsLogoShowHide'),
+    $mainContent = $('.jsBgOnScroll');
     
     
     $(window).scroll(function(){
@@ -123,16 +124,14 @@ var $logoShowHide = $('.jsLogoShowHide');
             $windowHeight = $(window).height();
 
         if($scrollPosition > ($windowHeight)*(0.7)) {
-//            $allContent.addClass('backgroundOnScroll');
+            $mainContent.addClass('main-content--newBgOnScroll');
             $logoShowHide.fadeIn(300);
             
         } else {
-//            $allContent.removeClass('backgroundOnScroll');
+            $mainContent.removeClass('main-content--newBgOnScroll');
             $logoShowHide.fadeOut(300);
         }
-
-            
-        
+  
     });
     
     
