@@ -1,6 +1,7 @@
 $(document).ready(function() { 
     
 //GLOBAL VARIABLES
+    
 var $windowWidth = $(window).width(),
     resizeBreakpoint = 1085,
     resizeTimer,
@@ -32,7 +33,7 @@ var $sidebarMenu = $('.jsNamesOnHover');
         $menuBtnName.slideUp(200);
     });
     
-    $(window).on('resize', function(e) { // INSURANCE 
+    $(window).on('resize', function(e) { //RESET SETTINGS IN CASE OF RESIZE WIDTH
 
 
         clearTimeout(resizeTimer);
@@ -89,7 +90,7 @@ function burgerOnClick(){
     });
     
     
-    $(window).on('resize', function(e) { // INSURANCE
+    $(window).on('resize', function(e) { //RESET SETTINGS IN CASE OF RESIZE WIDTH
 
 
         clearTimeout(resizeTimer);
@@ -98,6 +99,7 @@ function burgerOnClick(){
             $newWidth = $(window).width();
             if ($newWidth > resizeBreakpoint) {
                 $burgerBtn.off();
+                $sidebarMenuShowHide.off();
                 $sidebarMenuShowHide.show();
                 $menuBtnName.hide();
                 $crossIcon.hide();
@@ -111,5 +113,27 @@ function burgerOnClick(){
     });
     
 };
+    
+//SHOW SMALL LOGO AND CHANGE BACKGROUND ON SCROLL
+var $logoShowHide = $('.jsLogoShowHide');
+    
+    
+    $(window).scroll(function(){
+        var $scrollPosition = $(window).scrollTop(),
+            $windowHeight = $(window).height();
+
+        if($scrollPosition > ($windowHeight)*(0.7)) {
+//            $allContent.addClass('backgroundOnScroll');
+            $logoShowHide.fadeIn(300);
+            
+        } else {
+//            $allContent.removeClass('backgroundOnScroll');
+            $logoShowHide.fadeOut(300);
+        }
+
+            
+        
+    });
+    
     
 });

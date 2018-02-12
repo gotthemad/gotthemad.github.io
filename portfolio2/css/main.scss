@@ -1,17 +1,15 @@
 @import 'variables';
+@import 'typography';
 
 html {
     font-size: 62.5%;
-
+    margin: 0;
 }
 body {
-    margin: 0;
-    font-family: $main-font;
-    font-weight: 300;
-    font-size: 1.6rem;
-    color: $clr-font-body;
     background: $bg-body;
+    margin: 0;
 }
 
 @import 'sidebar';
 @import 'maincontent';
+@import 'logo';
