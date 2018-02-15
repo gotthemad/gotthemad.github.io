@@ -302,8 +302,29 @@ body {
           justify-content: center; }
 
 .logo__wrapper {
-  width: 80%; }
+  -webkit-animation-name: wrapper;
+          animation-name: wrapper;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  width: 70%; }
 
+@-webkit-keyframes wrapper {
+  100% {
+    -webkit-transform: skewY(15deg);
+            transform: skewY(15deg);
+    width: 65%; } }
+
+@keyframes wrapper {
+  100% {
+    -webkit-transform: skewY(15deg);
+            transform: skewY(15deg);
+    width: 65%; } }
 .logo__ratio {
   padding-top: 75%;
   position: relative;
@@ -318,21 +339,84 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -webkit-transform: skewY(15deg);
-          transform: skewY(15deg); }
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
 
 .logo__pixel--a {
-  background-color: #20677d; }
+  -webkit-animation-name: pixel--a;
+          animation-name: pixel--a;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
 
+@-webkit-keyframes pixel--a {
+  100% {
+    background-color: #20677d; } }
+
+@keyframes pixel--a {
+  100% {
+    background-color: #20677d; } }
 .logo__pixel--m {
   @inclide logo__pixel;
-  background-color: #00a8a7; }
+  -webkit-animation-name: pixel--m;
+          animation-name: pixel--m;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
 
+@-webkit-keyframes pixel--m {
+  100% {
+    background-color: #00a8a7; } }
+
+@keyframes pixel--m {
+  100% {
+    background-color: #00a8a7; } }
 .logo__pixel--b {
-  background-color: #20677d; }
+  -webkit-animation-name: pixel--b;
+          animation-name: pixel--b;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
 
+@-webkit-keyframes pixel--b {
+  100% {
+    background-color: #20677d; } }
+
+@keyframes pixel--b {
+  100% {
+    background-color: #20677d; } }
 .logo__pixel--z {
-  background-color: #00a8a7; }
+  -webkit-animation-name: pixel--z;
+          animation-name: pixel--z;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1; }
+
+@-webkit-keyframes pixel--z {
+  100% {
+    background-color: #00a8a7; } }
+
+@keyframes pixel--z {
+  100% {
+    background-color: #00a8a7; } }
 
 /*# sourceMappingURL=main.css.map */

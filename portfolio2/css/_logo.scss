@@ -1,5 +1,13 @@
 .logo__wrapper {
-    width: 80%; 
+    animation-name: wrapper;
+    animation-delay: 1s;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    width: 70%; 
+}
+@keyframes wrapper {
+    100%{transform: skewY(15deg); width: 65%}
 }
 .logo__ratio {
     padding-top: 75%;
@@ -16,7 +24,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    transform: skewY(15deg);
 }
 @mixin logo__pixel {
     
@@ -25,23 +32,57 @@
     
     @include logo__pixel;
     
-    background-color: $clr-dark-blue;
+    animation-name: pixel--a;
+    animation-delay: 1.2s;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
 }
+@keyframes pixel--a {
+    100%{background-color: $clr-dark-blue;}
+}
+
 .logo__pixel--m {
     
     @inclide logo__pixel;
     
-    background-color: $clr-light-blue;
+    animation-name: pixel--m;
+    animation-delay: 0.1s;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
 }
+@keyframes pixel--m {
+    100% {background-color: $clr-light-blue;}
+}
+
 .logo__pixel--b {
     
     @include logo__pixel;
     
-    background-color: $clr-dark-blue;
+    animation-name: pixel--b;
+    animation-delay: 0.6s;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+}
+@keyframes pixel--b {
+    100% {background-color: $clr-dark-blue;}
 }
 .logo__pixel--z {
     
     @include logo__pixel;
     
-    background-color: $clr-light-blue;
+    animation-name: pixel--z;
+    animation-delay: 1.2s;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    
+}
+@keyframes pixel--z {
+    100%{background-color: $clr-light-blue;}
 }
