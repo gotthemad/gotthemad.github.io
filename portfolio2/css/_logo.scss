@@ -1,0 +1,44 @@
+.logo {
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+}
+.logo__inner {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    transform: skewY(15deg);
+}
+@mixin logo__pixel {
+    
+}
+.logo__pixel--a {
+    
+    @include logo__pixel;
+    
+    background-color: $clr-dark-blue;
+}
+.logo__pixel--m {
+    
+    @inclide logo__pixel;
+    
+    background-color: $clr-light-blue;
+}
+.logo__pixel--b {
+    
+    @include logo__pixel;
+    
+    background-color: $clr-dark-blue;
+}
+.logo__pixel--z {
+    
+    @include logo__pixel;
+    
+    background-color: $clr-light-blue;
+}
