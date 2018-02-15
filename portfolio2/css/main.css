@@ -276,8 +276,7 @@ body {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  align-items: center; }
+          align-items: center; }
 
 .section__inner--left {
   height: 100%;
@@ -297,9 +296,15 @@ body {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
-.logo {
+.logo__wrapper {
+  width: 80%; }
+
+.logo__ratio {
   padding-top: 75%;
   position: relative;
   width: 100%; }

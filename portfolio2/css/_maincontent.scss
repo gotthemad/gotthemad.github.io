@@ -42,8 +42,6 @@
 }
 .section__inner--start {
     @include section__inner;
-    
-    align-items: center;
 }
 
 .section__inner--left {
@@ -52,4 +50,6 @@
 
 .section__inner--right {
     @include section__inner;
+    
+    justify-content: center;
 }
