@@ -35,21 +35,40 @@
 }
 
 @mixin section__inner {
-    height: 100%;
-    width: 100%;
     display: flex;
+    width: inherit;
+    height: inherit;
     align-items: center;
+    padding: 30px;
 }
-.section__inner--start {
+.section__inner {
     @include section__inner;
 }
-
-.section__inner--left {
-    @include section__inner;
-}
-
-.section__inner--right {
+.section__inner--just-center {
     @include section__inner;
     
     justify-content: center;
+}
+.section__inner--align-top {
+    @include section__inner;
+    
+    align-items: flex-start;
+}
+.section__inner--align-bottom {
+    @include section__inner;
+    
+    align-items: flex-end;
+}
+
+@mixin about__image {
+    height: 25vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    
+}
+.about__image--creative {
+    @include about__image;
+    
+    background-image: url(../img/brainstorm.svg);
+    background-size: 100%;
 }

@@ -10,15 +10,15 @@
 <body>
 
 <!--SIDE BAR-->
-<div class="sidebar">
+<header class="sidebar">
 
     <!--BURGER FOR NARROW SCREENS-->
-    <div class="sidebar__burger jsShowHideBtn">
+    <button class="sidebar__burger jsShowHideBtn">
         
         <img class="burger__icon--burger jsBurgerIcon" src="img/burger2.svg" alt="Show menu button">
         <img class="burger__icon--cross jsCrossIcon" src="img/cross-out.svg" alt="Close menu button">
         
-    </div>
+    </button>
    
    
     <!--LOGO-->
@@ -92,7 +92,7 @@
         
         <a class="sidebar-btn--social" href="">
             
-            <svg class="sidebar-btn__svg--social" viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg>
+            <img src="img/github.svg" alt="">
             
         </a>
         
@@ -104,7 +104,7 @@
         
     </div>
     
-</div>
+</header>
 
 <main class="main-content jsBgOnScroll">
      
@@ -112,10 +112,8 @@
 
      <section class="main-content__section" id="start">
         
-         <div class="section__inner--start">
-           
-            <div class="section__inner--social"></div>
-            
+         <article class="section__inner">
+
             <div>
              
                 <h1 class="t3--intitle">Hi,<br/>I am <span class="t3__michael--intitle">Michael</span>.</h1>
@@ -123,12 +121,10 @@
                 <button class="button">contact me</button>
             
             </div>
-            
-            <div class="section__inner--technology"></div>
-        
-         </div>
+
+         </article>
          
-         <div class="section__inner--right">
+         <div class="section__inner--just-center">
          
             <div class="logo__wrapper">
                  <div class="logo__ratio">
@@ -280,12 +276,52 @@
      
      <section class="main-content__section" id="about">
         
-         <div class="section__inner--left">
+         <article class="section__inner--align-top">
+           
+           
+            
+            <div>
+            <div class="about__image--creative"></div>
              
-             <h2 class="t2">Something about me will be here.</h2>
+                 <h2 class="t2">I am creative</h2>
+                 <p class="t1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta accusamus ex, rem amet quibusdam harum, qui quas voluptates incidunt obcaecati, dignissimos in delectus. Delectus enim, quam beatae deserunt laboriosam.</p>
              
-         </div>
-         <div class="section__inner--right"></div> 
+             </div>
+             
+         </article>
+         
+         <article class="section__inner--align-bottom">
+            
+            <div>
+             
+                 <h2 class="t2">web designer,</h2>
+                 <p class="t1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta accusamus ex, rem amet quibusdam harum, qui quas voluptates incidunt obcaecati, dignissimos in delectus. Delectus enim, quam beatae deserunt laboriosam.</p>
+             
+             </div>
+             
+         </article>
+         
+         <article class="section__inner--align-top">
+            
+            <div>
+             
+                 <h2 class="t2">coder</h2>
+                 <p class="t1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel perferendis totam nisi quos, eum, expedita, voluptatum dignissimos laudantium similique distinctio consequuntur accusantium aperiam odio eos perspiciatis. Ducimus magni minus qui?</p>
+                 
+             </div>
+             
+         </article>
+         
+         <article class="section__inner--align-bottom">
+            
+            <div>
+
+                 <h2 class="t2">and music lover.</h2>
+                 <p class="t1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, cumque quibusdam architecto perspiciatis dignissimos incidunt vel nobis ab aut, iste quod sed deserunt, labore velit itaque corporis fugit veritatis optio.</p>
+             
+             </div>
+             
+         </article>
          
      </section>
      
@@ -321,7 +357,8 @@
         
          <div class="section__inner--left">
              
-             <h2 class="t2">You can contact me if you would like to.</h2>
+             <h2 class="t2">Do you like what I am doing?</h2>
+             <button class="button">HIRE ME</button>
              
          </div>
          <div class="section__inner--right"></div> 

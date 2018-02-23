@@ -1,13 +1,18 @@
+* {
+    box-sizing: border-box;
+}
 .logo__wrapper {
     animation-name: wrapper;
-    animation-delay: 1s;
-    animation-duration: 0.3s;
+    animation-duration: 1.3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    width: 70%; 
+    animation-timing-function: ease-out;
+    transform: skewY(15deg);
+    width: 85%;
+    
 }
 @keyframes wrapper {
-    100%{transform: skewY(15deg); width: 65%}
+    100%{ width: 70%}
 }
 .logo__ratio {
     padding-top: 75%;
@@ -33,14 +38,20 @@
     @include logo__pixel;
     
     animation-name: pixel--a;
-    animation-delay: 1.2s;
-    animation-duration: 0.6s;
+    animation-delay: 0.3s;
+    animation-duration: 1.2s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    background-color: rgba(0,0,0,0);
+    margin: 0;
     
 }
 @keyframes pixel--a {
-    100%{background-color: $clr-dark-blue;}
+    25% {background-color: $clr-dark-blue; margin: 35%;}
+    50% {background-color: $clr-light-blue; margin: 10%;}
+    75% {background-color: $clr-dark-blue; margin: 40%;}
+    100% {background-color: $clr-light-blue; margin: 0;}
 }
 
 .logo__pixel--m {
@@ -49,13 +60,19 @@
     
     animation-name: pixel--m;
     animation-delay: 0.1s;
-    animation-duration: 0.4s;
+    animation-duration: 1.3s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    background-color: rgba(0,0,0,0);
+    margin: 0;
     
 }
 @keyframes pixel--m {
-    100% {background-color: $clr-light-blue;}
+    25% {background-color: $clr-light-blue; margin: 35%;}
+    50% {background-color: $clr-dark-blue; margin: 10%;}
+    75% {background-color: $clr-light-blue; margin: 40%}
+    100% {background-color: $clr-dark-blue; margin: 0;}
 }
 
 .logo__pixel--b {
@@ -63,26 +80,38 @@
     @include logo__pixel;
     
     animation-name: pixel--b;
-    animation-delay: 0.6s;
-    animation-duration: 0.4s;
+    animation-delay: 0.2s;
+    animation-duration: 1.4s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    background-color: rgba(0,0,0,0);
+    margin: 0;
     
 }
 @keyframes pixel--b {
-    100% {background-color: $clr-dark-blue;}
+    25% {background-color: $clr-dark-blue; margin: 35%;}
+    50% {background-color: $clr-light-blue; margin: 10%;}
+    75% {background-color: $clr-dark-blue; margin: 40%}
+    100% {background-color: $clr-light-blue; margin: 0;}
 }
 .logo__pixel--z {
     
     @include logo__pixel;
     
     animation-name: pixel--z;
-    animation-delay: 1.2s;
-    animation-duration: 0.6s;
+    animation-delay: 0.4s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    background-color: rgba(0,0,0,0);
+    margin: 0;
     
 }
 @keyframes pixel--z {
-    100%{background-color: $clr-light-blue;}
+    25% {background-color: $clr-light-blue; margin: 35%;}
+    50% {background-color: $clr-dark-blue; margin: 10%;}
+    75% {background-color: $clr-light-blue; margin: 40%}
+    100% {background-color: $clr-dark-blue; margin: 0;}
 }
