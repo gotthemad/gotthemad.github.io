@@ -64,11 +64,26 @@
     height: 25vh;
     width: 100%;
     background-repeat: no-repeat;
+    background-size: contain;
     
 }
 .about__image--creative {
     @include about__image;
     
     background-image: url(../img/brainstorm.svg);
-    background-size: 100%;
+}
+.about__image--designer {
+    @include about__image;
+    
+    background-image: url(../img/graphic-tool.svg);
+}
+.about__image--coder {
+    @include about__image;
+    
+    background-image: url(../img/flowchart.svg);
+}
+.about__image--music {
+    @include about__image;
+    
+    background-image: url(../img/radio.svg);
 }

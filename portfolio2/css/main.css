@@ -326,8 +326,29 @@ body {
   height: 25vh;
   width: 100%;
   background-repeat: no-repeat;
-  background-image: url(../img/brainstorm.svg);
-  background-size: 100%; }
+  background-size: contain;
+  background-image: url(../img/brainstorm.svg); }
+
+.about__image--designer {
+  height: 25vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/graphic-tool.svg); }
+
+.about__image--coder {
+  height: 25vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/flowchart.svg); }
+
+.about__image--music {
+  height: 25vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/radio.svg); }
 
 * {
   -webkit-box-sizing: border-box;
