@@ -31,7 +31,9 @@
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 @mixin logo__pixel {
-    
+    border-radius: 50%;
+    margin: 20%;
+    background-color: rgba(0,0,0,0);
 }
 .logo__pixel--a {
     
@@ -43,20 +45,17 @@
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
-    background-color: rgba(0,0,0,0);
-    margin: 0;
     
 }
 @keyframes pixel--a {
-    25% {background-color: $clr-dark-blue; margin: 35%;}
-    50% {background-color: $clr-light-blue; margin: 10%;}
-    75% {background-color: $clr-dark-blue; margin: 40%;}
-    100% {background-color: $clr-light-blue; margin: 0;}
+    33% {background-color: $clr-light-blue; margin: 15%;}
+    67% {background-color: $clr-light-blue; margin: 10%;}
+    100% {background-color: $clr-dark-blue; margin: 0; border-radius: 0;}
 }
 
 .logo__pixel--m {
     
-    @inclide logo__pixel;
+    @include logo__pixel;
     
     animation-name: pixel--m;
     animation-delay: 0.1s;
@@ -64,15 +63,12 @@
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
-    background-color: rgba(0,0,0,0);
-    margin: 0;
     
 }
 @keyframes pixel--m {
-    25% {background-color: $clr-light-blue; margin: 35%;}
-    50% {background-color: $clr-dark-blue; margin: 10%;}
-    75% {background-color: $clr-light-blue; margin: 40%}
-    100% {background-color: $clr-dark-blue; margin: 0;}
+    33% {background-color: $clr-dark-blue; margin: 15%;}
+    67% {background-color: $clr-dark-blue; margin: 10%;}
+    100% {background-color: $clr-light-blue; margin: 0; border-radius: 0;}
 }
 
 .logo__pixel--b {
@@ -85,15 +81,12 @@
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
-    background-color: rgba(0,0,0,0);
-    margin: 0;
     
 }
 @keyframes pixel--b {
-    25% {background-color: $clr-dark-blue; margin: 35%;}
-    50% {background-color: $clr-light-blue; margin: 10%;}
-    75% {background-color: $clr-dark-blue; margin: 40%}
-    100% {background-color: $clr-light-blue; margin: 0;}
+    33% {background-color: $clr-light-blue; margin: 15%;}
+    67% {background-color: $clr-light-blue; margin: 10%;}
+    100% {background-color: $clr-dark-blue; margin: 0; border-radius: 0;}
 }
 .logo__pixel--z {
     
@@ -105,13 +98,11 @@
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
-    background-color: rgba(0,0,0,0);
-    margin: 0;
+
     
 }
 @keyframes pixel--z {
-    25% {background-color: $clr-light-blue; margin: 35%;}
-    50% {background-color: $clr-dark-blue; margin: 10%;}
-    75% {background-color: $clr-light-blue; margin: 40%}
-    100% {background-color: $clr-dark-blue; margin: 0;}
+    33% {background-color: $clr-dark-blue; margin: 15%;}
+    67% {background-color: $clr-dark-blue; margin: 10%;}
+    100% {background-color: $clr-light-blue; margin: 0; border-radius: 0;}
 }

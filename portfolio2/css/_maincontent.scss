@@ -36,6 +36,7 @@
 
 @mixin section__inner {
     display: flex;
+    flex-direction: row;
     width: inherit;
     height: inherit;
     align-items: center;
@@ -44,6 +45,13 @@
 .section__inner {
     @include section__inner;
 }
+.section__inner--start {
+    @include section__inner;
+    
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 .section__inner--just-center {
     @include section__inner;
     
@@ -59,31 +67,38 @@
     
     align-items: flex-end;
 }
-
+.section__btns {
+    display: flex;
+    align-items: center;
+    margin: 1.6rem 0 1.6rem 0;
+}
 @mixin about__image {
     height: 25vh;
-    width: 100%;
+    width: 25vh;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 90%;
+    background-position: center;
+//    background-color: $clr-dark-blue;
+    margin: 50px auto;
     
 }
 .about__image--creative {
     @include about__image;
     
-    background-image: url(../img/brainstorm.svg);
+    background-image: url(../img/brainstorm--thin.svg);
 }
 .about__image--designer {
     @include about__image;
     
-    background-image: url(../img/graphic-tool.svg);
+    background-image: url(../img/graphic-tool--thin.svg);
 }
 .about__image--coder {
     @include about__image;
     
-    background-image: url(../img/flowchart.svg);
+    background-image: url(../img/flowchart--thin.svg);
 }
 .about__image--music {
     @include about__image;
     
-    background-image: url(../img/radio.svg);
+    background-image: url(../img/headphones--thin.svg);
 }

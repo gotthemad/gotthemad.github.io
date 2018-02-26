@@ -24,7 +24,10 @@
         padding: 24px 0 24px 0;
         }
 }
-
+//show elements on scroll
+.jsHeaderShowHide {
+    display: none;
+}
 //sidebar logo
 .sidebar__logo {
 
@@ -37,7 +40,6 @@
     
 .logo__img {
     width: 80px;
-    display: none;
 }
 
 //sidebar burger
@@ -95,22 +97,28 @@
     flex-direction: column;
     transition: all 0.1s;
     justify-content: center;
+    box-sizing: border-box;
     
 }
 .sidebar-btn {
     
     @include sidebar-btn;
 }
-.sidebar-btn--social {
-    
-    @include sidebar-btn;
-    
-    height: 5.0rem;
-    width: 5.0rem;
+.sidebar-btn:focus {
+    border: 3px dashed #F0554D;
+    border-radius: 10px;
+    outline: none;
 }
-.sidebar-btn:hover, .sidebar-btn--social:hover {
+
+.social-btn object:hover {
+//    color: red;
+//    cursor: pointer;
+}
+
+
+.sidebar-btn:hover {
     color: black;
-    background-color: $clr-light-blue;
+    background-color: $clr-orange;
 }
 @mixin sidebar-btn__svg {
     width: 3.0rem;
@@ -129,7 +137,7 @@
     @include sidebar-btn__svg;
     margin: 0;
 }
-.sidebar-btn__svg path, .sidebar-btn__svg--social path {
+.sidebar-btn__svg path {
     fill: currentColor;
 }
 .sidebar-btn__name {
