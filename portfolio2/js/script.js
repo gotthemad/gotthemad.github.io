@@ -145,7 +145,7 @@ var $contactBtns = $('.jsContactBtns'),
     $contactOnClick.on('click', function(e){
         $contactBtns.fadeOut(300, function() {
             $sectionForm.slideDown(500);
-            $zoom.animate({ 'zoom': 0.9 }, 500);
+            $zoom.animate({ 'zoom': 0.5 }, 500);
                              });
     });
     

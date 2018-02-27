@@ -365,7 +365,7 @@ body {
   border-right: none;
   border-left: none; }
 
-.form__input:focus {
+.form__input:focus, .form__input--textarea:focus {
   outline: none;
   border-bottom: 0.3rem solid #f0554d; }
 

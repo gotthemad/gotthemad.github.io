@@ -95,7 +95,7 @@
 .form__input {
     @include form__input;
 }
-.form__input:focus {
+.form__input:focus, .form__input--textarea:focus {
     outline: none;
     border-bottom: 0.3rem solid $clr-orange;
 }
