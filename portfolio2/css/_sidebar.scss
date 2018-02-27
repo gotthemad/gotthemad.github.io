@@ -89,6 +89,7 @@
     
 }
 @mixin sidebar-btn {
+    box-sizing: border-box;
     color: white;
     text-decoration: none;
     height: 10.0rem;
@@ -97,6 +98,7 @@
     flex-direction: column;
     transition: all 0.1s;
     justify-content: center;
+    justify-self: center;
     box-sizing: border-box;
     
 }
@@ -105,9 +107,11 @@
     @include sidebar-btn;
 }
 .sidebar-btn:focus {
-    border: 3px dashed #F0554D;
-    border-radius: 10px;
+    border: 0.3rem dotted $clr-dark-blue;
     outline: none;
+}
+.sidebar-btn:active {
+    border: none;
 }
 
 .social-btn object:hover {

@@ -25,7 +25,6 @@ $clr-font-body: rgb(240,240,240);
     font-weight: 300;
     color: $clr-dark-blue;
     text-transform: uppercase;
-    line-height: 4.0rem;
 }
 .t2 {
     @include t2;
@@ -34,15 +33,17 @@ $clr-font-body: rgb(240,240,240);
     @include t2;
     display: block;
     width: 100%;
-    margin: 1.0rem 0 1.0rem 0;
-    
+    margin: 1.0rem 0 1.0rem 0;   
 }
+.jsZoom {
+    transform: all 1s;
+}
+
 @mixin t3 {
     font-family: $main-font;
     font-weight: 300;
     font-size: 6.5rem;
     color: white;
-    line-height: 7.0rem;
 }
 .t3 {
     @include t3;

@@ -67,10 +67,41 @@
     
     align-items: flex-end;
 }
+.l-space-holder {
+    min-height: 6.0rem;
+    width: 100%;
+    margin: 1.6rem 0 1.6rem 0;
+}
 .section__btns {
     display: flex;
     align-items: center;
-    margin: 1.6rem 0 1.6rem 0;
+}
+.form {
+    width: 100%;
+}
+.jsSectionForm {
+    display: none;
+}
+@mixin form__input {
+    width: 80%;
+    height: 4.0rem;
+    margin: 1.0rem 0 1.0rem 0;
+    background-color: rgba(0,0,0,0);
+    border-bottom: 0.3rem solid $clr-light-blue;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.form__input {
+    @include form__input;
+}
+.form__input:focus {
+    outline: none;
+    border-bottom: 0.3rem solid $clr-orange;
+}
+.form__input--textarea {
+    @include form__input;
+    height: auto;
 }
 @mixin about__image {
     height: 25vh;

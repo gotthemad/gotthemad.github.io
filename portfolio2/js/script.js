@@ -133,6 +133,20 @@ var $headerShowHide = $('.jsHeaderShowHide'),
         }
   
     });
+
     
+//SECTION START CONTACT
+
+var $contactBtns = $('.jsContactBtns'),
+    $contactOnClick = $('.jsContactOnClick'),
+    $sectionForm = $('.jsSectionForm'),
+    $zoom = $('.jsZoom');
+    
+    $contactOnClick.on('click', function(e){
+        $contactBtns.fadeOut(300, function() {
+            $sectionForm.slideDown(500);
+            $zoom.animate({ 'zoom': 0.9 }, 500);
+                             });
+    });
     
 });
