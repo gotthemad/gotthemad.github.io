@@ -142,17 +142,26 @@ var $contactBtns = $('.jsContactBtns'),
     $sectionForm = $('.jsSectionForm'),
     $zoom = $('.jsZoom'),
     $cancel =$('.jsCancelBtn'),
-    $formBtns =$('.jsFormBtns');
+    $headingStart = $('.jsHeading--start'),
+    $headingContact = $('.jsHeading--contact');
+
     
     $contactOnClick.on('click', function(e){
         $contactBtns.fadeOut(300, function() {
-            $sectionForm.slideDown(500);
-                             });
+            $sectionForm.slideDown(500, function() {
+                $headingStart.fadeOut(500, function() {
+                    $headingContact.fadeIn(500);
+                });
+            });
+        });
     });
     
         $cancel.on('click', function(e){
             $sectionForm.slideUp(500, function() {
-                $contactBtns.fadeIn(500);
+                $contactBtns.fadeIn(300);
+                $headingContact.fadeOut(500, function() {
+                    $headingStart.fadeIn(500);
+                });
             });      
     });
     

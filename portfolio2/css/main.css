@@ -282,6 +282,9 @@ body {
   -ms-flex-line-pack: center;
       align-content: center; }
 
+.jsHeading--contact {
+  display: none; }
+
 .section__inner--just-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,7 +341,6 @@ body {
 
 .l-space-holder {
   min-height: 6.0rem;
-  width: 100%;
   margin: 1.6rem 0 1.6rem 0; }
 
 .section__btns {
