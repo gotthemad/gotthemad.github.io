@@ -140,13 +140,20 @@ var $headerShowHide = $('.jsHeaderShowHide'),
 var $contactBtns = $('.jsContactBtns'),
     $contactOnClick = $('.jsContactOnClick'),
     $sectionForm = $('.jsSectionForm'),
-    $zoom = $('.jsZoom');
+    $zoom = $('.jsZoom'),
+    $cancel =$('.jsCancelBtn'),
+    $formBtns =$('.jsFormBtns');
     
     $contactOnClick.on('click', function(e){
         $contactBtns.fadeOut(300, function() {
             $sectionForm.slideDown(500);
-            $zoom.animate({ 'zoom': 0.5 }, 500);
                              });
+    });
+    
+        $cancel.on('click', function(e){
+            $sectionForm.slideUp(500, function() {
+                $contactBtns.fadeIn(500);
+            });      
     });
     
 });
