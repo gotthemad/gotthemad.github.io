@@ -6,26 +6,22 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    padding: 24px 0 24px 0;
     width: 10.0rem;
     background-color: $clr-sidebar-bg;
     
     
     @media (max-width: 1085px) {
         right: 0;
-        align-items: flex-end;
-        padding: 0;}
-    
-    
+    }
     @media (min-width: 1086px) {
         left: 0;
         height: 100%;
         align-items: center;
-        padding: 24px 0 24px 0;
-        }
+        padding: 2.4rem 0 2.4rem 0;
+    }
 }
 //show elements on scroll
-.jsHeaderShowHide {
+.jsSideBarElmts {
     display: none;
 }
 //sidebar logo
@@ -39,7 +35,7 @@
 }
     
 .logo__img {
-    width: 80px;
+    width: 8.0rem;
 }
 
 //sidebar burger
@@ -49,7 +45,7 @@
         box-sizing: border-box;
         height: 10.0rem;
         width: 10.0rem;
-        padding: 30px;
+        padding: 3.0rem;
         background-color: $clr_light_blue;
         border: none;
     }
