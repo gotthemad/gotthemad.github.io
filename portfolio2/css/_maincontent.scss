@@ -8,13 +8,10 @@
         margin: 0;
     }
     
-    @media (min-width: 1086px) and (max-width: 1366px){
-        margin-left: 7.0rem;
-    }
-    
-    @media (min-width: 1367px) {
+    @media (min-width: 1086px){
         margin-left: 10.0rem;
     }
+    
 }
 .main-content--newBgOnScroll {
     background-color: rgba(0,0,0,0.4);
@@ -33,13 +30,13 @@
     }
     
     @media (min-width: 1085px) and (max-width: 1366px){
-        flex-direction: row;
+        flex-direction: row-reverse;
         min-width: 1085px;
         max-width: 1366px;
         
     }
     @media (min-width: 1367px) {
-        flex-direction: row;
+        flex-direction: row-reverse;
         min-width: 1366px;
         max-width: 1500px;
     }

@@ -9,7 +9,6 @@
     background-color: $clr-sidebar-bg;
     z-index: 2;
     width: 10.0rem;
-    padding: 2.4rem 0 2.4rem 0;
     
     
     @media (max-width: 1085px) {
@@ -20,6 +19,7 @@
         left: 0;
         height: 100%;
         align-items: center;
+        padding: 2.4rem 0 2.4rem 0;
     }
 }
 //show elements on scroll
