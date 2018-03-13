@@ -23,7 +23,7 @@
 .main-content__section {
     height: 100vh;
     display: flex;
-    margin: 0 auto;
+//    margin: 0 auto;
     align-self: center;
     
     @media (max-width: 1085px) {
@@ -34,12 +34,14 @@
     
     @media (min-width: 1085px) and (max-width: 1366px){
         flex-direction: row;
+        min-width: 1085px;
         max-width: 1366px;
         
     }
     @media (min-width: 1367px) {
         flex-direction: row;
-        width: 1366px;
+        min-width: 1366px;
+        max-width: 1500px;
     }
 }
 

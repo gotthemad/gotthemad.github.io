@@ -7,11 +7,13 @@
     display: flex;
     flex-direction: column;
     background-color: $clr-sidebar-bg;
+    z-index: 2;
     
     
     @media (max-width: 1085px) {
         right: 0;
         width: 7.0rem;
+        margin: 1.6rem;
     }
     @media (min-width: 1086px) and (max-width: 1366px){
         left: 0;
@@ -65,15 +67,16 @@
     
     @media (max-width: 1085px) {
         box-sizing: border-box;
-        height: 10.0rem;
-        width: 10.0rem;
-        padding: 3.0rem;
+        height: 7.0rem;
+        width: 7.0rem;
+        padding: 2.1rem;
         background-color: $clr_light_blue;
         border: none;
     }
     
     @media (min-width: 1086px) {
-        display: none;}      
+        display: none;}
+    
 }
 .burger__icon--cross {
     
