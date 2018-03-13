@@ -2,8 +2,15 @@
 @import 'typography';
 
 html {
-    font-size: 62.5%;
     margin: 0;
+    
+    @media (max-width: 1366px) {
+        font-size: 43.75%;
+    }
+    
+    @media (min-width: 1367px) {
+        font-size: 62.5%;
+    }
 }
 body {
     background: $bg-body;
