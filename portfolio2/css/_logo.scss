@@ -8,11 +8,17 @@
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
     transform: skewY(15deg);
-    width: 85%;
+    
+    @media (max-width: 1085px) {
+        width: 50%;
+    }
+    @media (min-width: 1085px) {
+        width: 85%;
+    }
     
 }
 @keyframes wrapper {
-    100%{ width: 70%}
+    100%{ width: 80%}
 }
 .logo__ratio {
     padding-top: 75%;

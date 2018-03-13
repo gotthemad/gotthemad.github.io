@@ -4,7 +4,11 @@
 html {
     margin: 0;
     
-    @media (max-width: 1366px) {
+    @media (max-width: 1085px){
+        font-size: 43.75%;
+    }
+    
+    @media (min-width: 1086px) and (max-width: 1366px) {
         font-size: 50.0%;
     }
     

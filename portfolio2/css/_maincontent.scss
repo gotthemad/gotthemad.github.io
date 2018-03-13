@@ -2,6 +2,9 @@
     display: flex;
     flex-flow: column nowrap;
     transition: background 0.3s;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 
     
     @media (max-width: 1085px) {
@@ -9,35 +12,36 @@
     }
     
     @media (min-width: 1086px){
-        margin-left: 10.0rem;
+        padding-left: 10.0rem;
     }
     
 }
 .main-content--newBgOnScroll {
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.3);
 }
 
 .main-content__section {
     height: 100vh;
     display: flex;
-//    margin: 0 auto;
-    align-self: center;
+    position: relative;
     
-    @media (max-width: 1085px) {
-        flex-direction: column;
-        padding: 2.0rem;
+    @media (max-width: 640px) {
+        flex-direction: column-reverse;
         width: 100%;
     }
-    
-    @media (min-width: 1085px) and (max-width: 1366px){
+    @media (min-width: 641px) and (max-width: 1085px){
         flex-direction: row-reverse;
-        min-width: 1085px;
-        max-width: 1366px;
+        width: 95%;
+    }
+    
+    @media (min-width: 1086px) and (max-width: 1366px){
+        flex-direction: row-reverse;
+        width: 90%;
         
     }
     @media (min-width: 1367px) {
         flex-direction: row-reverse;
-        min-width: 1366px;
+        width: 85%;
         max-width: 1500px;
     }
 }
@@ -46,9 +50,8 @@
     display: flex;
     flex-direction: row;
     flex: 1;
-//    height: 100%;
     align-items: center;
-    padding: 30px;
+    padding: 2%;
 }
 .section__inner {
     @include section__inner;
@@ -57,16 +60,34 @@
     @include section__inner;
     
     flex-wrap: wrap;
-    align-content: center;
+    
+    @media (max-width: 640px) {
+        align-content: flex-start;
+    }
+    @media (min-width: 641px) {
+        align-content: center;
+    }
 }
 .jsHeading--contact {
     display: none;
 }
-.section__inner--just-center {
+.section__inner--justify {
     @include section__inner;
     
-    justify-content: center;
+    @media (max-width: 640px) {
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+    @media (min-width: 641px) and (max-width: 1085px) {
+        justify-content: center;
+    }
+    
+    @media (min-width: 1086px) {
+        justify-content: center;
+    }
+    
 }
+
 .section__inner--align-top {
     @include section__inner;
     
@@ -113,13 +134,13 @@
     height: auto;
 }
 @mixin about__image {
-    height: 25vh;
-    width: 25vh;
+    height: 15vh;
+    width: 15vh;
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: center;
 //    background-color: $clr-dark-blue;
-    margin: 50px auto;
+    margin: 3% auto;
     
 }
 .about__image--creative {
