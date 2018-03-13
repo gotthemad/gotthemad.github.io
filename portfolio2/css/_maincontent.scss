@@ -1,16 +1,18 @@
 .main-content {
     display: flex;
     flex-flow: column nowrap;
-
     transition: background 0.3s;
 
-    
     
     @media (max-width: 1085px) {
         margin: 0;
     }
     
-    @media (min-width: 1086px) {
+    @media (min-width: 1086px) and (max-width: 1366px){
+        margin-left: 7.0rem;
+    }
+    
+    @media (min-width: 1367px) {
         margin-left: 10.0rem;
     }
 }
@@ -20,7 +22,6 @@
 
 .main-content__section {
     height: 100vh;
-    width: 1400px;
     display: flex;
     margin: 0 auto;
     align-self: center;
@@ -28,11 +29,17 @@
     @media (max-width: 1085px) {
         flex-direction: column;
         padding: 2.0rem;
+        width: 100%;
     }
     
-    @media (min-width: 1085px) {
+    @media (min-width: 1085px) and (max-width: 1366px){
         flex-direction: row;
+        max-width: 1366px;
         
+    }
+    @media (min-width: 1367px) {
+        flex-direction: row;
+        width: 1366px;
     }
 }
 

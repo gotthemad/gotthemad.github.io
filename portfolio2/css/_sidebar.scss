@@ -6,18 +6,27 @@
     margin: 0;
     display: flex;
     flex-direction: column;
-    width: 10.0rem;
     background-color: $clr-sidebar-bg;
     
     
     @media (max-width: 1085px) {
         right: 0;
+        width: 7.0rem;
     }
-    @media (min-width: 1086px) {
+    @media (min-width: 1086px) and (max-width: 1366px){
         left: 0;
         height: 100%;
+        width: 7.0rem;
+        align-items: center;
+        padding: 1.6rem 0 1.6rem 0;
+    }
+    @media (min-width: 1367px){
+        left: 0;
+        height: 100%;
+        width: 10.0rem;
         align-items: center;
         padding: 2.4rem 0 2.4rem 0;
+        
     }
 }
 //show elements on scroll
@@ -28,14 +37,27 @@
 .sidebar__logo {
 
     @media (max-width: 1085px) {
-        display: none;}
+        display: none;
+    }
     
-    @media (min-width: 1086px) {
-        height: 100%;}   
+    @media (min-width: 1086px) and (max-width: 1366px) {
+        height: 100%;
+    }
+    
+    @media (min-width: 1367px) {
+        height: 100%;
+    }
+
 }
     
 .logo__img {
-    width: 8.0rem;
+    @media (min-width: 1086px) and (max-width: 1366px) {
+        width: 6.0rem;
+    }
+    
+    @media (min-width: 1367px) {
+        width: 8.0rem;
+    }
 }
 
 //sidebar burger
@@ -88,14 +110,22 @@
     box-sizing: border-box;
     color: white;
     text-decoration: none;
-    height: 10.0rem;
-    width: 10.0rem;
     display: flex;
     flex-direction: column;
     transition: all 0.1s;
     justify-content: center;
     justify-self: center;
     box-sizing: border-box;
+    
+    @media (max-width: 1366px) {
+        height: 7.0rem;
+        width: 7.0rem;
+    }
+    
+    @media (min-width: 1367px) {
+        height: 10.0rem;
+        width: 10.0rem;
+    }
     
 }
 .sidebar-btn {
@@ -121,10 +151,19 @@
     background-color: $clr-orange;
 }
 @mixin sidebar-btn__svg {
-    width: 3.0rem;
-    height: 3.0rem;
+    
     align-self: center;
     margin: 0 0 0.6rem 0;
+    
+    @media (max-width: 1366px) {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+    
+    @media (min-width: 1367px) {
+        height: 3.0rem;
+        width: 3.0rem;
+    }
 }
 
 .sidebar-btn__svg {

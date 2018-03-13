@@ -8,9 +8,16 @@ $clr-font-body: rgb(240,240,240);
 
 .s1 { //in menu only
     font-family: $main-font;
-    font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
+    
+    @media (max-width: 1366px) {
+        font-size: 0.9rem;
+    }
+    
+    @media (min-width: 1367px) {
+        font-size: 1.2rem;
+    }
 }
 
 .t1 { //basic size - paragraphs

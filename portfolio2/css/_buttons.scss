@@ -54,7 +54,13 @@ a:focus {
     display: inline-block;
 }
 .btn-social object {
-    height: 2.8rem;
+    @media (max-width: 1366px) {
+        height: 1.6rem;
+    }
+    
+    @media (min-width: 1367px) {
+        height: 2.1rem;
+    }
 }
 .btn-social object path {
     fill: currentColor;
