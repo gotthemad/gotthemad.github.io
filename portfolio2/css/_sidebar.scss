@@ -22,10 +22,7 @@
         padding: 2.4rem 0 2.4rem 0;
     }
 }
-//show elements on scroll
-.jsSideBarElmts {
-    display: none;
-}
+
 //sidebar logo
 .sidebar__logo {
 
@@ -34,15 +31,18 @@
     }
     
     @media (min-width: 1086px) {
+        display: flex;
+        align-content: flex-start;
         height: 100%;
     }
 
 }
     
-.logo__img {
-    
-    width: 8.0rem;
+.mb-logo {
+    width: 100%;
+    height: 5.39rem;
 }
+
 
 //sidebar burger
 .sidebar__burger {
@@ -93,20 +93,22 @@
 }
 @mixin sidebar-btn {
     box-sizing: border-box;
-    color: white;
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    transition: all 0.1s;
+    transition: all 0.3s;
     justify-content: center;
     justify-self: center;
     box-sizing: border-box;
     height: 10.0rem;
-    width: 10.0rem;    
+    width: 10.0rem;
+    color: $clr-icons;
 }
-.sidebar-btn {
-    
+.sidebar-btn {   
     @include sidebar-btn;
+}
+.sidebar-btn--active {
+    color: white;
 }
 .sidebar-btn:focus {
     border: 0.3rem dotted $clr-dark-blue;
@@ -115,17 +117,13 @@
 .sidebar-btn:active {
     border: none;
 }
-
-.social-btn object:hover {
-//    color: red;
-//    cursor: pointer;
-}
-
-
 .sidebar-btn:hover {
-    color: black;
-    background-color: $clr-orange;
+    color: $clr-orange;
+    position: relative;
+    right: 0.1rem;
+    top: 0.1rem;
 }
+
 @mixin sidebar-btn__svg {
     
     align-self: center;
@@ -162,4 +160,22 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;}
+}
+
+
+//JavaScript classes
+
+@mixin jsShowHideOnScroll {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.jsShowHideOnScroll {
+    @include jsShowHideOnScroll;
+}
+.jsShowHideOnScroll--visible {
+    
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s;
 }

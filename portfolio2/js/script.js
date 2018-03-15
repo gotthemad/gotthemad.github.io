@@ -23,14 +23,18 @@ if ($windowWidth >= resizeBreakpoint) {
 
 function menuOnHover(){    
 
-var $sidebarMenu = $('.jsNamesOnHover');
+var $sidebarMenu = $('.jsNamesOnHover'),
+    $sidebarBtns = $('.jsBtnsColor');
     
     $sidebarMenu.on('mouseenter', function(e){
         $menuBtnName.slideDown(200);
+        $sidebarBtns.addClass('sidebar-btn--active');
+        
     });
     
     $sidebarMenu.on('mouseleave', function(e){
         $menuBtnName.slideUp(200);
+        $sidebarBtns.removeClass('sidebar-btn--active');
     });
     
     $(window).on('resize', function(e) { //RESET SETTINGS IN CASE OF RESIZE WIDTH
@@ -115,7 +119,7 @@ function burgerOnClick(){
 };
     
 //SHOW SMALL LOGO AND CHANGE BACKGROUND ON SCROLL
-var $sideBarElmts = $('.jsSideBarElmts'),
+var $showHideElmts = $('.jsShowHideOnScroll'),
     $mainContent = $('.jsBgOnScroll');
     
     
@@ -125,11 +129,12 @@ var $sideBarElmts = $('.jsSideBarElmts'),
 
         if($scrollPosition > ($windowHeight)*(0.7)) {
             $mainContent.addClass('main-content--newBgOnScroll');
-            $sideBarElmts.fadeIn(300);
+            $showHideElmts.addClass('jsShowHideOnScroll--visible');
             
         } else {
             $mainContent.removeClass('main-content--newBgOnScroll');
-            $sideBarElmts.fadeOut(300);
+            $showHideElmts.removeClass('jsShowHideOnScroll--visible');
+            
         }
   
     });

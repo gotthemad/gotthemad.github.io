@@ -39,33 +39,25 @@ a:focus {
 }
 
 //SOCIAL BUTTONS STYLES
+.social-icons {
+    width: 2.5rem;
+    height: 2.5rem;
+}
 .btn-social {
+    color: $clr-icons--social;
     position: relative;
     display: inline-block;
-    color: red;
+    transition: all 0.3s;
 }
-.btn-social:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: inline-block;
+.btn-social:hover {
+    color: $clr-orange;
+    position: relative;
+    right: 0.1rem;
+    top: 0.1rem;
 }
-.btn-social object {
-    @media (max-width: 1366px) {
-        height: 1.6rem;
-    }
-    
-    @media (min-width: 1367px) {
-        height: 2.1rem;
-    }
-}
-.btn-social object path {
+.svg__symbol path {
     fill: currentColor;
 }
 .l-btn-wrap {
     margin: 1.5rem;
-    height: 2.8rem;
 }

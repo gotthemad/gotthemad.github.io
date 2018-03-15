@@ -30,17 +30,17 @@
         width: 100%;
     }
     @media (min-width: 641px) and (max-width: 1085px){
-        flex-direction: row-reverse;
+        flex-direction: row;
         width: 95%;
     }
     
     @media (min-width: 1086px) and (max-width: 1366px){
-        flex-direction: row-reverse;
+        flex-direction: row;
         width: 90%;
         
     }
     @media (min-width: 1367px) {
-        flex-direction: row-reverse;
+        flex-direction: row;
         width: 85%;
         max-width: 1500px;
     }
@@ -163,3 +163,4 @@
     
     background-image: url(../img/headphones--thin.svg);
 }
+

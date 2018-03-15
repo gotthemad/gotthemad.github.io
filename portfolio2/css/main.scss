@@ -20,6 +20,11 @@ body {
     background: $bg-body;
     margin: 0;
 }
+.svg {
+    display: none;
+    width: 0;
+    height: 0;
+}
 
 @import 'sidebar';
 @import 'maincontent';

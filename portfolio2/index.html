@@ -23,14 +23,17 @@
    
     <!--LOGO-->
     <div class="sidebar__logo">
+       
+        <svg class="mb-logo jsShowHideOnScroll">
+            <use xlink:href="#mb-logo"></use>
+        </svg>
         
-        <img class="logo__img jsSideBarElmts" src="img/mb_logo.svg" alt="Michael Bro">
     </div>
     
     <!--MENU-->
     <nav class="sidebar__menu jsNamesOnHover jsShowHide">
        
-        <a class="sidebar-btn" href="#start">
+        <a class="sidebar-btn jsBtnsColor" href="#start">
             
             <svg class="sidebar-btn__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
             <path fill="#000000" d="M13.5 9c-1.378 0-2.5-1.122-2.5-2.5s1.122-2.5 2.5-2.5 2.5 1.122 2.5 2.5-1.122 2.5-2.5 2.5zM13.5 5c-0.827 0-1.5 0.673-1.5 1.5s0.673 1.5 1.5 1.5 1.5-0.673 1.5-1.5-0.673-1.5-1.5-1.5z"></path>
@@ -42,7 +45,7 @@
             
         </a>
         
-        <a class="sidebar-btn" href="#about">
+        <a class="sidebar-btn jsBtnsColor" href="#about">
             
             <svg class="sidebar-btn__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
             <path fill="#000000" d="M9.5 11c-3.033 0-5.5-2.467-5.5-5.5s2.467-5.5 5.5-5.5 5.5 2.467 5.5 5.5-2.467 5.5-5.5 5.5zM9.5 1c-2.481 0-4.5 2.019-4.5 4.5s2.019 4.5 4.5 4.5c2.481 0 4.5-2.019 4.5-4.5s-2.019-4.5-4.5-4.5z"></path>
@@ -53,7 +56,7 @@
             
         </a>
         
-        <a class="sidebar-btn" href="#skills">
+        <a class="sidebar-btn jsBtnsColor" href="#skills">
             
             <svg class="sidebar-btn__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
             <path fill="#000000" d="M5 15c-0.128 0-0.256-0.049-0.354-0.146l-4-4c-0.195-0.195-0.195-0.512 0-0.707l4-4c0.195-0.195 0.512-0.195 0.707 0s0.195 0.512 0 0.707l-3.646 3.646 3.646 3.646c0.195 0.195 0.195 0.512 0 0.707-0.098 0.098-0.226 0.146-0.354 0.146z"></path>
@@ -65,7 +68,7 @@
             
         </a>
         
-        <a class="sidebar-btn" href="#projects">
+        <a class="sidebar-btn jsBtnsColor" href="#projects">
             
             <svg class="sidebar-btn__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
             <path fill="#000000" d="M17.5 2h-16c-0.827 0-1.5 0.673-1.5 1.5v10c0 0.827 0.673 1.5 1.5 1.5h7.5v2h-3.5c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h8c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-3.5v-2h7.5c0.827 0 1.5-0.673 1.5-1.5v-10c0-0.827-0.673-1.5-1.5-1.5zM18 13.5c0 0.276-0.224 0.5-0.5 0.5h-16c-0.276 0-0.5-0.224-0.5-0.5v-10c0-0.276 0.224-0.5 0.5-0.5h16c0.276 0 0.5 0.224 0.5 0.5v10z"></path>
@@ -75,7 +78,7 @@
             
         </a>
         
-        <a class="sidebar-btn" href="#contact">
+        <a class="sidebar-btn jsBtnsColor" href="#contact">
             
             <svg class="sidebar-btn__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
             <path fill="#000000" d="M17.5 6h-16c-0.827 0-1.5 0.673-1.5 1.5v9c0 0.827 0.673 1.5 1.5 1.5h16c0.827 0 1.5-0.673 1.5-1.5v-9c0-0.827-0.673-1.5-1.5-1.5zM17.5 7c0.030 0 0.058 0.003 0.087 0.008l-7.532 5.021c-0.29 0.193-0.819 0.193-1.109 0l-7.532-5.021c0.028-0.005 0.057-0.008 0.087-0.008h16zM17.5 17h-16c-0.276 0-0.5-0.224-0.5-0.5v-8.566l7.391 4.927c0.311 0.207 0.71 0.311 1.109 0.311s0.798-0.104 1.109-0.311l7.391-4.927v8.566c0 0.276-0.224 0.5-0.5 0.5z"></path>
@@ -89,16 +92,21 @@
     
     <!--SOCIAL MEDIA-->
     <div class="sidebar__social-media">
-        <div class="l-btn-wrap">
-            <a class="btn-social jsSideBarElmts" href="">    
-                <object type="image/svg+xml" data="img/github.svg">Your browser does not support SVGs</object> 
+       
+        <div class="l-btn-wrap jsShowHideOnScroll">
+            <a class="btn-social" href="">    
+                <svg class="social-icons">
+                    <use xlink:href="#github-logo"></use>
+                </svg>
             </a>
         </div>
         
         
-        <div class="l-btn-wrap">
-            <a class="btn-social jsSideBarElmts" href="">
-               <object type="image/svg+xml" data="img/linkedin-logo.svg">Your browser does not support SVGs</object>
+        <div class="l-btn-wrap jsShowHideOnScroll">
+            <a class="btn-social" href="">
+                <svg class="social-icons">
+                    <use xlink:href="#linkedin-logo"></use>
+                </svg>
             </a>
         </div>
         
@@ -137,14 +145,18 @@
 
 
                         <div class="l-btn-wrap">
-                            <a class="btn-social" href="">
-                                <object type="image/svg+xml" data="img/github.svg">Your browser does not support SVGs</object>
+                            <a class="btn-social" href="">    
+                                <svg class="social-icons">
+                                    <use xlink:href="#github-logo"></use>
+                                </svg>
                             </a>
                         </div>
 
                         <div class="l-btn-wrap">
                             <a class="btn-social" href="">
-                                <object type="image/svg+xml" data="img/linkedin-logo.svg">Your browser does not support SVGs</object>
+                                <svg class="social-icons">
+                                    <use xlink:href="#linkedin-logo"></use>
+                                </svg>
                             </a>
                         </div>
 
@@ -169,18 +181,22 @@
                            <button type="submit" class="btn l-btn">Send</button>
                            <button class="btn l-btn jsCancelBtn">Cancel</button>
                            
-                           <div class="l-btn-wrap">
-                            <a class="btn-social" href="">
-                                <object type="image/svg+xml" data="img/github.svg">Your browser does not support SVGs</object>
-                            </a>
+                            <div class="l-btn-wrap">
+                                <a class="btn-social" href="">    
+                                    <svg class="social-icons">
+                                        <use xlink:href="#github-logo"></use>
+                                    </svg>
+                                </a>
                             </div>
 
                             <div class="l-btn-wrap">
-                            <a class="btn-social" href="">
-                                <object type="image/svg+xml" data="img/linkedin-logo.svg">Your browser does not support SVGs</object>
-                            </a>
+                                <a class="btn-social" href="">
+                                    <svg class="social-icons">
+                                        <use xlink:href="#linkedin-logo"></use>
+                                    </svg>
+                                </a>
                             </div>
-                           
+                               
                         </div>
                            
                     </form>
@@ -448,4 +464,71 @@
 <script type="text/javascript" src="js/script.js"></script>
 
 </body>
+
+<!--SVG IMAGES-->
+
+<!--MB LOGO-->
+
+<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  enable-background="new 0 0 297.5 200.3" xml:space="preserve">
+
+<defs>
+    
+    <symbol id="mb-logo" class="svg__symbol--logo" viewBox="0 0 297.5 200.3" x="0px" y="0px">
+    
+        <polyline fill="#00A8A7" points="173.5,39.9 173.5,14.9 297.5,48.1 297.5,172.2 173.5,139 173.5,114.2 " />
+        <g>
+            <path fill="#20677D" d="M148.8,157.2V33.2l99.2,26.6v24.8l24.8,6.6V116l-24.8-6.6v24.8l24.8,6.6v24.8l-24.8-6.6v24.8L148.8,157.2z
+                 M173.5,89.4l74.4,19.9V84.6l-74.4-19.9V89.4z M173.5,139l74.4,19.9v-24.8l-74.4-19.9V139z" />
+        </g>
+        <polyline fill="#20677D" points="50,56.3 62,59.5 124,76.1 124,138.2 124,200.3 62,183.7 0,167.1 0,105 0,42.9 24.8,49.6 " />
+        <g>
+            <path fill="#00A8A7" d="M24.8,123.9V0l24.8,6.6v24.8l24.8,6.6v24.8l24.8,6.6V44.7l24.8,6.6V26.6l24.8,6.6v123.9l-24.8-6.6V76.1
+                l-24.8-6.6v24.8l-24.8-6.6V62.9l-24.8-6.6v74.4L24.8,123.9z" />
+        </g>
+        
+    </symbol>
+    
+</defs>
+
+</svg>
+
+<!--GITHUB LOGO-->
+
+<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 32.6 31.8" xml:space="preserve">
+
+<defs>
+    
+    <symbol id="github-logo" class="svg__symbol" viewBox="0 0 32.6 31.8">
+    
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5
+        c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+        c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+        C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+        c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+        c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"/>
+        
+    </symbol>
+    
+</defs>
+
+</svg>
+
+<!--LINKEDIN LOGO-->
+
+<svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 430.117 430.118" xml:space="preserve">
+
+<defs>
+    
+    <symbol id="linkedin-logo" class="svg__symbol" viewBox="0 0 430.117 430.118">
+    
+    <g>
+    	<path d="M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471   c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z    M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563   c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z    M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621   c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531   c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99   c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z" fill="#FFFFFF"/>
+    </g>
+        
+    </symbol>
+    
+</defs>
+
+</svg>
+
 </html>
