@@ -27,13 +27,13 @@ var $sidebarMenu = $('.jsNamesOnHover'),
     $sidebarBtns = $('.jsBtnsColor');
     
     $sidebarMenu.on('mouseenter', function(e){
-        $menuBtnName.slideDown(200);
+        $menuBtnName.addClass('jsSlidingName--visible');
         $sidebarBtns.addClass('sidebar-btn--active');
         
     });
     
     $sidebarMenu.on('mouseleave', function(e){
-        $menuBtnName.slideUp(200);
+        $menuBtnName.removeClass('jsSlidingName--visible');
         $sidebarBtns.removeClass('sidebar-btn--active');
     });
     

@@ -17,15 +17,12 @@ html {
     }
 }
 body {
-    background: $bg-body;
+    background-image: url(../img/bg-4k--grad.png);
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-color: rgb(180,180,180);
     margin: 0;
 }
-.svg {
-    display: none;
-    width: 0;
-    height: 0;
-}
-
 @import 'sidebar';
 @import 'maincontent';
 @import 'buttons';

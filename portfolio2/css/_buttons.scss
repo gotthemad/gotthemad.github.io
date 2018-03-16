@@ -2,10 +2,7 @@ a:focus {
     outline: 0.3rem dotted $clr-dark-blue;
     outline-offset: 0.3rem;
 }
-//a:active {
-//    outline: 0.3rem dotted $clr-dark-blue;
-//
-//}
+
 //DEFAULT BUTTON STYLES
 .btn {
     text-transform: uppercase;
@@ -18,8 +15,7 @@ a:focus {
     border: 0.2rem solid $clr-light-blue;
     background-color: rgba(0,0,0,0);
     transition: background 0.3s, border 0.3s;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
 .btn:hover {
     background-color: $clr-orange;
@@ -38,25 +34,28 @@ a:focus {
     margin-right: 1.5rem;
 }
 
-//SOCIAL BUTTONS STYLES
+//SVG STYLES
+.svg {
+    display: none;
+    width: 0;
+    height: 0;
+}
+.svg__symbol path {
+    fill: currentColor;
+}
+
+//SOCIAL ICONS STYLES
 .social-icons {
     width: 2.5rem;
     height: 2.5rem;
 }
 .btn-social {
-    color: $clr-icons--social;
-    position: relative;
     display: inline-block;
-    transition: all 0.3s;
+    color: $clr-icons--social;
+    transition: color 0.3s;
 }
 .btn-social:hover {
     color: $clr-orange;
-    position: relative;
-    right: 0.1rem;
-    top: 0.1rem;
-}
-.svg__symbol path {
-    fill: currentColor;
 }
 .l-btn-wrap {
     margin: 1.5rem;

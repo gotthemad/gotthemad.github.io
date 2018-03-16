@@ -32,13 +32,13 @@
     
     @media (min-width: 1086px) {
         display: flex;
+        flex: 1;
         align-content: flex-start;
-        height: 100%;
     }
 
 }
     
-.mb-logo {
+.logo__svg {
     width: 100%;
     height: 5.39rem;
 }
@@ -76,20 +76,27 @@
         }
     
     @media (min-width: 1086px) {
-        height: 100%;
-        display: block;
+        flex: 1;
         }
 }
 .jsSlidingName {
     
-    @media (max-width: 1085px) {
+    @media (min-width: 1086px) {
+        visibility: hidden;
+        opacity: 0;
+        height: 0rem;
+        overflow: hidden;
+        transition: height 0.2s, opacity 0.3s, visibility 0.3s;
         
-        }
+        }  
+}
+.jsSlidingName--visible {
     
     @media (min-width: 1086px) {
-        display: none;
-        }
-    
+        visibility: visible;
+        opacity: 1;
+        height: 1.2rem;
+        }  
 }
 @mixin sidebar-btn {
     box-sizing: border-box;
@@ -119,17 +126,17 @@
 }
 .sidebar-btn:hover {
     color: $clr-orange;
-    position: relative;
-    right: 0.1rem;
-    top: 0.1rem;
+//    position: relative;
+//    right: 0.1rem;
+//    top: 0.1rem;
 }
 
 @mixin sidebar-btn__svg {
     
     align-self: center;
     margin: 0 0 0.6rem 0;
-    height: 3.0rem;
     width: 3.0rem;
+    height: 3.0rem;
 }
 
 .sidebar-btn__svg {
@@ -156,8 +163,9 @@
         display: none;}
     
     @media (min-width: 1086px) {
-        height: 100%;
+
         display: flex;
+        flex: 1;
         flex-direction: column;
         justify-content: flex-end;}
 }
