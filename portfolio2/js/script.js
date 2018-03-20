@@ -1,5 +1,7 @@
 $(document).ready(function() { 
     
+    castParallax();
+    
 //GLOBAL VARIABLES
     
 var $windowWidth = $(window).width(),
@@ -120,24 +122,68 @@ function burgerOnClick(){
     
 //SHOW SMALL LOGO AND CHANGE BACKGROUND ON SCROLL
 var $showHideElmts = $('.jsShowHideOnScroll'),
-    $mainContent = $('.jsBgOnScroll');
+    $mainContent = $('.jsBgOnScroll'),
+    $jsAboutElmts = $('.jsPositionOnScroll'),
+    $jsAboutSection =$('.jsAboutSection'),
+    $jsSticky = $('.jsSticky'),
+    $jsStickyActive = $('.jsSticky--active');
     
     
-    $(window).scroll(function(){
-        var $scrollPosition = $(window).scrollTop(),
-            $windowHeight = $(window).height();
+//    $(window).scroll(function(){
+//        
+//        var $scrollPosition = $(window).scrollTop(),
+//            $windowHeight = $(window).height(),
+//        
+//            $jsAboutSection =$('.jsAboutSection'),
+//            $sectionHeight = $jsAboutSection.height(),
+//            $sH_proc = ((($sectionHeight)*100)/$windowHeight),
+//            $sh_proc_r = Math.round($sH_proc),
+            
+////            console.log('dd ' +$sh_proc_r);
+//        
+//            $scrollToVh_d = (($scrollPosition)*100)/$windowHeight,
+//            $scrollToVh_r = Math.round($scrollToVh_d);
+//            
+//            console.log($scrollToVh_r); 
+//        
+//            if($scrollToVh_r >= 50) {
+//                console.log('50 now');
+//                
+//                $jsSticky.addClass('jsSticky--active');
+//                
+//            } else if ($scrollToVh_r < 50) {
+//                console.log('less than 50');
+//                $jsSticky.removeClass('jsSticky--active');
+//            }
+//            if($scrollToVh_r >= $sh_proc_r) {
+//                console.log('true');
+//                
+//                $jsAboutSection.css({'height': $scrollToVh_r + 'vh'});
+//            } else {
+//                console.log('false');
+//            }
 
-        if($scrollPosition > ($windowHeight)*(0.7)) {
-            $mainContent.addClass('main-content--newBgOnScroll');
-            $showHideElmts.addClass('jsShowHideOnScroll--visible');
+        
             
-        } else {
-            $mainContent.removeClass('main-content--newBgOnScroll');
-            $showHideElmts.removeClass('jsShowHideOnScroll--visible');
-            
-        }
+//            $hun = (($jsAboutSection.height())*100)/$(window).height();
+//        
+//            console.log('hun is '+ $hun);
+        
+//        console.log('scroll position: '+$scrollPosition);
+//        console.log('window height:'+$windowHeight);
+//        console.log('About height is '+ $jsAboutSection.height());
+        
+//        if($scrollPosition > ($windowHeight)*(0.5)) {
+//            $mainContent.addClass('main-content--newBgOnScroll');
+//            $showHideElmts.addClass('jsShowHideOnScroll--visible');
+//            
+//        } else {
+//            $mainContent.removeClass('main-content--newBgOnScroll');
+//            $showHideElmts.removeClass('jsShowHideOnScroll--visible');
+//            
+//        }
   
-    });
+//    });
 
     
 //SECTION START CONTACT
@@ -169,5 +215,48 @@ var $contactBtns = $('.jsContactBtns'),
                 });
             });      
     });
+    
+    
+function castParallax() {
+
+	window.addEventListener("scroll", function(event){
+
+		var top = this.pageYOffset,
+            windowHeight = this.innerHeight,
+            topVh = (top * 100) / windowHeight,
+
+            layers = document.getElementsByClassName("jsParallax"),
+            layer, speed, yPos;
+        
+		for (var i = 0; i < layers.length; i++) {
+                layer = layers[i];
+                speed = layer.getAttribute('data-speed');
+                var yPos = ((speed/100)*topVh) -25;
+            
+                if (yPos > 0) { //maximum value is zero
+                    var yPos = 0;
+                } else if (yPos < -25) { // minimum value is -25
+                    var yPos = -25;
+                }
+            
+            console.log('ypos is: ' +yPos);
+            
+                if(i == 1 || i == 3){
+                    var yPos = yPos*(-1);
+                }
+                        
+            layer.setAttribute('style', 'transform: translate3d(0, ' + yPos + 'vh, 0)');
+    
+		}
+        
+        var mainContent = document.getElementsByClassName("jsSwichBg");
+        if(yPos == 0){
+            mainContent[0].classList.add("jsSwichBg--turquoise");    
+        } else if(yPos != 0)
+            mainContent[0].classList.remove("jsSwichBg--turquoise");   
+	});
+
+
+}    
     
 });

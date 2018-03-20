@@ -18,12 +18,13 @@ html {
 }
 body {
     background-image: url(../img/bg-4k--grad.png);
-    background-attachment: fixed;
-    background-repeat: repeat-x;
+//    background-attachment: fixed;
+    background-repeat: repeat;
     background-color: rgb(180,180,180);
     margin: 0;
 }
 @import 'sidebar';
 @import 'maincontent';
 @import 'buttons';
+@import 'svg';
 @import 'logo';

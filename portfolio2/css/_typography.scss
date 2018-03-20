@@ -34,10 +34,6 @@ $clr-font-body: rgb(240,240,240);
     width: 100%;
     margin: 1.0rem 0 1.0rem 0;   
 }
-.jsZoom {
-    transform: all 1s;
-}
-
 @mixin t3 {
     font-family: $main-font;
     font-weight: 300;
