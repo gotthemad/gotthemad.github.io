@@ -95,6 +95,20 @@
 //    transition-timing-function: ease-out;
     z-index: -1;
 }
+.jsLoad-start, .jsLoad-logo, .jsLoad-sidebar {
+    transition: all 0.8s;
+}
+.jsLoad-start {
+    transition-delay: 0.2s;
+    transition-timing-function: ease-in;
+}
+.jsLoad-logo {
+//    transition-timing-function: ease-in;
+}
+.jsLoad-sidebar {
+    transition-delay: 0.4s;
+    transition-timing-function: ease-in;
+}
 
 ////////////////////////////////////////////////////////
 

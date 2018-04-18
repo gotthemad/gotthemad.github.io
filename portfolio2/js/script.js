@@ -15,12 +15,24 @@ var menu = document.getElementsByClassName("jsNamesMouseEnter"),
     parallaxElmts = document.getElementsByClassName("jsParallax"),
     parallaxElmt, speed, xPosition, yPosition, yPos, elmtOpacity, elmtOp,
     yStart = [-150,-110,-130,-100],
-    aboutImages = document.getElementsByClassName("jsAboutImg");
+    aboutImages = document.getElementsByClassName("jsAboutImg"),
+//loading-logo animation
+    loadS = document.getElementsByClassName("jsLoad-start"),
+    loadStart = loadS[0],
+    loadL = document.getElementsByClassName("jsLoad-logo"),
+    loadLogo = loadL[0],
+    loadSi = document.getElementsByClassName("jsLoad-sidebar"),
+    loadSidebar = loadSi[0];
 
 //init
 (function init() {
 //    updatePosition(); //call when document is ready
+    startingAtt();
     menuNames();
+    
+    window.addEventListener("load", function(event) {
+        logoAnimation();
+     });
     
     window.addEventListener('scroll', function(event){ //call when scrolling
         scrollPos();
@@ -29,6 +41,23 @@ var menu = document.getElementsByClassName("jsNamesMouseEnter"),
     })
     
 })()//end init
+function startingAtt(){
+    loadStart.setAttribute('style','opacity: 0;');
+    loadSidebar.setAttribute('style','opacity: 0;');
+    loadLogo.setAttribute('style', 'transform: translate3d(-50%, 0, 0)');
+}
+    
+function logoAnimation(){
+    console.log('loading complete');
+    setTimeout(function() { loadingShow(); }, 2000);
+    
+}
+function loadingShow(){
+    loadStart.setAttribute('style','opacity: 1;');
+    loadSidebar.setAttribute('style','opacity: 1;');
+    loadLogo.setAttribute('style', 'transform: translate3d(0, 0, 0)');
+    
+}
 
 function menuNames(){
     
