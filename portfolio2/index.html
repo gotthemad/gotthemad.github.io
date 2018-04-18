@@ -13,7 +13,7 @@
 <header class="sidebar">
 
     <!--BURGER FOR NARROW SCREENS-->
-    <button class="sidebar__burger jsShowHideBtn">
+    <button class="sidebar__burger jsBurger">
         
         <img class="burger__icon--burger jsBurgerIcon" src="img/burger2.svg" alt="Show menu">
         <img class="burger__icon--cross jsCrossIcon" src="img/cross-out.svg" alt="Hide menu">
@@ -31,7 +31,7 @@
     </div>
     
     <!--MENU-->
-    <nav class="sidebar__menu jsNamesOnHover jsShowHide">
+    <nav class="sidebar__menu jsNamesMouseEnter jsBurgerClick">
        
         <a class="sidebar-btn jsBtnsColor" href="#start">
             
@@ -114,14 +114,13 @@
     
 </header>
 
-<!--<main class="main-content jsBgOnScroll">-->
 <main class="main-content jsSwichBg">
      
     <!--START-->
 
-     <section class="main-content__section--start" id="start">
+     <section class="main-content__section--row" id="start">
         
-         <article class="section__inner" data-speed="40">
+         <article class="section__inner--column">
 
                 
                 <div class="jsHeading--start">
@@ -206,7 +205,7 @@
 
          </article>
          
-         <div class="section__inner" data-speed="40">
+         <div class="section__inner--column">
          
             <div class="logo__wrapper">
                  <div class="logo__ratio">
@@ -356,65 +355,49 @@
      
     <!--ABOUT-->
      
-    <section class="main-content__section--about jsAboutSection" id="about">
+    <section class="main-content__section--row" id="about">
        
-        <article class="section__inner--about--odd jsParallax" data-speed="25" >
-             
-             <div class="jsPositionOnScroll">
+        <article class="section__inner--column jsParallax">
               
-                <svg class="about__image jsAboutImage--odd">
+                <svg class="about__image jsAboutImg">
                     <use xlink:href="#brainstorm-image"></use>
                 </svg>
 
-                <h2 class="t2">I am creative</h2>
+                <h2 class="t2 jsAboutTitles">I am creative</h2>
                 <p class="t1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta accusamus ex, rem amet quibusdam harum, qui quas voluptates incidunt obcaecati, dignissimos in delectus. Delectus enim, quam beatae deserunt laboriosam.</p>
-                
-            </div>
              
          </article>
          
-         <article class="section__inner--about--even jsParallax" data-speed="25">
-            
-            <div class="jsPositionOnScroll">
+         <article class="section__inner--column jsParallax">
              
-                <h2 class="t2">web designer,</h2>
+                <h2 class="t2 jsAboutTitles">web designer,</h2>
                 <p class="t1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic soluta accusamus ex, rem amet quibusdam harum, qui quas voluptates incidunt obcaecati, dignissimos in delectus. Delectus enim, quam beatae deserunt laboriosam.</p>
 
-                <svg class="about__image jsAboutImage--even">
+                <svg class="about__image jsAboutImg">
                     <use xlink:href="#graphictool-image"></use>
                 </svg>
-            
-            </div>
                  
          </article>
          
-         <article class="section__inner--about--odd jsParallax" data-speed="25">
-                
-            <div class="jsPositionOnScroll">
+         <article class="section__inner--column jsParallax">
 
-                <svg class="about__image jsAboutImage--odd">
+                <svg class="about__image jsAboutImg">
                     <use xlink:href="#flowchart-image"></use>
                 </svg>              
 
-                <h2 class="t2">coder</h2>
+                <h2 class="t2 jsAboutTitles">coder</h2>
                 <p class="t1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel perferendis totam nisi quos, eum, expedita, voluptatum dignissimos laudantium similique distinctio consequuntur accusantium aperiam odio eos perspiciatis. Ducimus magni minus qui?</p>
-                
-            </div>
                  
          </article>
          
-         <article class="section__inner--about--even jsParallax" data-speed="25">
-            
-            <div class="jsPositionOnScroll">
+         <article class="section__inner--column jsParallax">
              
-                <h2 class="t2">and music lover.</h2>
+                <h2 class="t2 jsAboutTitles">and music lover.</h2>
                 <p class="t1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, cumque quibusdam architecto perspiciatis dignissimos incidunt vel nobis ab aut, iste quod sed deserunt, labore velit itaque corporis fugit veritatis optio.</p>
 
-                <svg class="about__image jsAboutImage--even">
+                <svg class="about__image jsAboutImg">
                     <use xlink:href="#headphones-image"></use>
                 </svg>
-                
-            </div>
              
          </article>
          
@@ -422,14 +405,57 @@
      
     <!--SKILLS-->
      
-     <section class="main-content__section" id="skills">
+    <section class="main-content__section--column" id="skills">
+       
+        <article class="section__inner--column">
+             
+            <div class="chart">
+                
+            </div>
+                   
+        </article>
         
-         <div class="section__inner--left">
-             
-             <h2 class="t2">About my many skills</h2>
-             
-         </div>
-         <div class="section__inner--right"></div> 
+         <article class="l-flex--row chart">
+           
+            <div class="chart__scale">
+                <div class="scale__line jsScaleLine"></div>
+                <div class="scale__line jsScaleLine"></div>
+                <div class="scale__line jsScaleLine"></div>
+                <div class="scale__line jsScaleLine"></div>
+                <div class="scale__line jsScaleLine"></div>
+                <div class="scale__line jsScaleLine"></div>
+                <div class="scale__line jsScaleLine"></div>
+                <div class="scale__line jsScaleLine"></div>
+                <div class="scale__line jsScaleLine"></div>
+            </div>
+            
+            
+            <div class="chart__bar jsProgressBar" progress="55"></div>
+            <div class="chart__bar jsProgressBar" progress="55"></div>
+            <div class="chart__bar jsProgressBar" progress="77"></div>
+            <div class="chart__bar jsProgressBar" progress="77"></div>
+            <div class="chart__bar jsProgressBar" progress="88"></div>
+            <div class="chart__bar jsProgressBar" progress="66"></div>
+            <div class="chart__bar jsProgressBar" progress="33"></div>
+            <div class="chart__bar jsProgressBar" progress="55"></div>
+            <div class="chart__bar jsProgressBar" progress="11"></div>
+            
+        </article>
+        
+        <div class="l-flex--row tech">
+            
+            <div class="tech__inner s1"></div>
+            <div class="tech__inner"><p class="s1">java script</p></div>
+            <div class="tech__inner"><p class="s1">jquery</p></div>
+            <div class="tech__inner"><p class="s1">css3 / sass</p></div>
+            <div class="tech__inner"><p class="s1">html5 / bem</p></div>
+            <div class="tech__inner"><p class="s1">rwd</p></div>
+            <div class="tech__inner"><p class="s1">photoshop</p></div>
+            <div class="tech__inner"><p class="s1">illustrator</p></div>
+            <div class="tech__inner"><p class="s1">git</p></div>
+            <div class="tech__inner"><p class="s1">react</p></div>
+            
+        </div>
          
      </section>
      

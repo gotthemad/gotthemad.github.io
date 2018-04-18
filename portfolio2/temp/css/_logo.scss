@@ -4,13 +4,7 @@
 .logo__wrapper {
 
     transform: skewY(15deg);
-    
-    @media (max-width: 1085px) {
-        width: 50%;
-    }
-    @media (min-width: 1085px) {
-        width: 85%;
-    }
+    width: 50.0rem;
     
 }
 .logo__ratio {
