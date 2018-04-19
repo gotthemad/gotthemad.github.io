@@ -28,7 +28,7 @@ var menu = document.getElementsByClassName("jsNamesMouseEnter"),
 //init
 (function init() {
 //    updatePosition(); //call when document is ready
-    startingAtt();
+    scrollCheck();
     menuNames();
     
     window.addEventListener("load", function(event) {
@@ -41,6 +41,12 @@ var menu = document.getElementsByClassName("jsNamesMouseEnter"),
     })
     
 })()//end init
+function scrollCheck(){
+    var scrlP = window.scrollY;
+    if (scrlP == 0){
+        startingAtt();
+    }
+}
 function startingAtt(){
     loadStart.setAttribute('style','opacity: 0;');
     loadSidebar.setAttribute('style','opacity: 0;');
