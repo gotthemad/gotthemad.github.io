@@ -95,20 +95,20 @@
 //    transition-timing-function: ease-out;
     z-index: -1;
 }
-.jsLoad-start, .jsLoad-logo, .jsLoad-sidebar {
-    transition: all 0.8s;
-}
-.jsLoad-start {
-    transition-delay: 0.2s;
-    transition-timing-function: ease-in;
-}
-.jsLoad-logo {
+//.jsLoad-start-anim {
+//    transition: opacity 0.8s;
+//    transition-delay: 0.2s;
 //    transition-timing-function: ease-in;
-}
-.jsLoad-sidebar {
-    transition-delay: 0.4s;
-    transition-timing-function: ease-in;
-}
+//}
+//.jsLoad-logo-anim {
+////    transition-timing-function: ease-in;
+//    transition: transform 0.8s;
+//}
+//.jsLoad-sidebar-anim {
+//    transition: opacity 0.8s;
+//    transition-delay: 0.4s;
+//    transition-timing-function: ease-in;
+//}
 
 ////////////////////////////////////////////////////////
 

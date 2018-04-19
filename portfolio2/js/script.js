@@ -1,3 +1,4 @@
+"use strict";
 document.addEventListener('DOMContentLoaded', function(event) { //document ready
 //global variables
 //used in menuNames function
@@ -37,7 +38,6 @@ var menu = document.getElementsByClassName("jsNamesMouseEnter"),
     window.addEventListener('scroll', function(event){ //call when scrolling
         scrollPos();
 //        updatePosition();
-
     })
     
 })()//end init
@@ -53,9 +53,9 @@ function logoAnimation(){
     
 }
 function loadingShow(){
-    loadStart.setAttribute('style','opacity: 1;');
-    loadSidebar.setAttribute('style','opacity: 1;');
-    loadLogo.setAttribute('style', 'transform: translate3d(0, 0, 0)');
+    loadStart.setAttribute('style','opacity: 1; transition: opacity 0.5s;');
+    loadSidebar.setAttribute('style','opacity: 1; transition: opacity 0.5s;');
+    loadLogo.setAttribute('style', 'transform: translate3d(0, 0, 0); transition: transform 0.5s;');
     
 }
 

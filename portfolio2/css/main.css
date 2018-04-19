@@ -361,22 +361,6 @@ body {
 .jsParallax {
   z-index: -1; }
 
-.jsLoad-start, .jsLoad-logo, .jsLoad-sidebar {
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s; }
-
-.jsLoad-start {
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in; }
-
-.jsLoad-sidebar {
-  -webkit-transition-delay: 0.4s;
-          transition-delay: 0.4s;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in; }
-
 .chart {
   display: -webkit-box;
   display: -ms-flexbox;
